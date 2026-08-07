@@ -27,15 +27,17 @@ export default async function webAnalyticsRoutes(fastify: FastifyInstance) {
                 UserModel.countDocuments()
             ]);
 
-            const pending = analyticsBuffer.getPendingStats();
+            // รวมยอดที่บันทึกแล้วใน DB + ยอดสดที่เพิ่งยิงมาพักใน Buffer ช่วง 60 นาทีนี้
+            const realTimeVisitors = (analytics?.unique_visitors_count || 0) + analyticsBuffer.getPendingSessionCount();
+            const realTimeSearches = (analytics?.total_product_searches || 0) + analyticsBuffer.getPendingSearchCount();
 
             return {
                 success: true,
                 data: {
                     early_adopters: earlyAdoptersCount || 0,
-                    unique_visitors: (analytics?.unique_visitors_count || 0) + pending.pendingVisitors,
-                    product_searches: (analytics?.total_product_searches || 0) + pending.pendingSearches,
-                    last_updated: new Date()
+                    unique_visitors: realTimeVisitors,
+                    product_searches: realTimeSearches,
+                    last_updated: analytics?.last_updated || new Date()
                 }
             };
         } catch (err) {

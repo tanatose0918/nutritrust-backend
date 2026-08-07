@@ -22,19 +22,25 @@ class AnalyticsBuffer {
     trackSearch() {
         this.searchCounter += 1;
     }
-    // 2.5 ดึงข้อมูลที่รอการ Flush ใน Memory มารวมกับ DB ใน Real-time
-    getPendingStats() {
-        return {
-            pendingVisitors: this.activeSessions.size,
-            pendingSearches: this.searchCounter
-        };
-    }
     // 3. เริ่ม Thread Worker (อัปเดตลง MongoDB ทุกๆ 60 นาที = 3,600,000 ms)
     startBatchScheduler() {
         const SIXTY_MINUTES = 60 * 60 * 1000;
         this.intervalTimer = setInterval(async () => {
             await this.flushToMongoDB();
         }, SIXTY_MINUTES);
+    }
+    // เพิ่ม getters ดึงยอด Buffer ปัจจุบัน
+    getPendingSessionCount() {
+        return this.activeSessions.size;
+    }
+    getPendingSearchCount() {
+        return this.searchCounter;
+    }
+    getPendingStats() {
+        return {
+            pendingVisitors: this.activeSessions.size,
+            pendingSearches: this.searchCounter
+        };
     }
     // 4. บันทึกลง MongoDB
     async flushToMongoDB() {
