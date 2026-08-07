@@ -8,12 +8,16 @@ import providerRoutes from './routes/providers';
 import productRoutes from './routes/products';
 import scienceSummaryRoutes from './routes/scienceSummaries';
 import searchRoutes from './routes/search';
+import compareRoutes from './routes/compare';
+import waitlistRoutes from './routes/waitlist';
 import { BrandModel } from './models/Brand';
 import { IngredientModel } from './models/Ingredient';
 import { ProviderModel } from './models/Provider';
 import { ProductModel } from './models/Product';
 import { EvidenceModel } from './models/Evidence';
 import { ProductAnalyticsModel } from './models/ProductAnalytics';
+import { WaitlistModel } from './models/Waitlist';
+import { SurveyModel } from './models/Survey';
 
 dotenv.config();
 
@@ -44,7 +48,7 @@ async function start() {
       };
     });
 
-    // Overview endpoint for all 6 collections
+    // Overview endpoint for all collections
     server.get('/api/collections', async () => {
       const [
         brandsCount,
@@ -52,14 +56,18 @@ async function start() {
         providersCount,
         productsCount,
         scienceSummariesCount,
-        analyticsCount
+        analyticsCount,
+        waitlistCount,
+        surveysCount
       ] = await Promise.all([
         BrandModel.countDocuments(),
         IngredientModel.countDocuments(),
         ProviderModel.countDocuments(),
         ProductModel.countDocuments(),
         EvidenceModel.countDocuments(),
-        ProductAnalyticsModel.countDocuments()
+        ProductAnalyticsModel.countDocuments(),
+        WaitlistModel.countDocuments(),
+        SurveyModel.countDocuments()
       ]);
 
       return {
@@ -71,7 +79,9 @@ async function start() {
           providers: { count: providersCount, endpoint: '/api/providers' },
           products: { count: productsCount, endpoint: '/api/products' },
           science_summaries: { count: scienceSummariesCount, endpoint: '/api/science-summaries' },
-          products_analytics: { count: analyticsCount, endpoint: '/api/analytics/:productId' }
+          products_analytics: { count: analyticsCount, endpoint: '/api/analytics/:productId' },
+          waitlists: { count: waitlistCount, endpoint: '/api/waitlist/count' },
+          surveys: { count: surveysCount, endpoint: '/api/surveys' }
         }
       };
     });
@@ -83,6 +93,8 @@ async function start() {
     await server.register(productRoutes);
     await server.register(scienceSummaryRoutes);
     await server.register(searchRoutes);
+    await server.register(compareRoutes);
+    await server.register(waitlistRoutes);
 
     await server.listen({ port: PORT, host: HOST });
     console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);
@@ -93,3 +105,4 @@ async function start() {
 }
 
 start();
+
