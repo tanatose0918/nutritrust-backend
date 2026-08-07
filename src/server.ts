@@ -10,6 +10,7 @@ import scienceSummaryRoutes from './routes/scienceSummaries';
 import searchRoutes from './routes/search';
 import compareRoutes from './routes/compare';
 import waitlistRoutes from './routes/waitlist';
+import userRoutes from './routes/users';
 import { BrandModel } from './models/Brand';
 import { IngredientModel } from './models/Ingredient';
 import { ProviderModel } from './models/Provider';
@@ -99,6 +100,7 @@ async function start() {
     await server.register(searchRoutes);
     await server.register(compareRoutes);
     await server.register(waitlistRoutes);
+    await server.register(userRoutes);
 
     await server.listen({ port: PORT, host: HOST });
     console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);

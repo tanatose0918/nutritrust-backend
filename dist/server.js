@@ -15,6 +15,7 @@ const scienceSummaries_1 = __importDefault(require("./routes/scienceSummaries"))
 const search_1 = __importDefault(require("./routes/search"));
 const compare_1 = __importDefault(require("./routes/compare"));
 const waitlist_1 = __importDefault(require("./routes/waitlist"));
+const users_1 = __importDefault(require("./routes/users"));
 const Brand_1 = require("./models/Brand");
 const Ingredient_1 = require("./models/Ingredient");
 const Provider_1 = require("./models/Provider");
@@ -85,6 +86,7 @@ async function start() {
         await server.register(search_1.default);
         await server.register(compare_1.default);
         await server.register(waitlist_1.default);
+        await server.register(users_1.default);
         await server.listen({ port: PORT, host: HOST });
         console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);
     }
