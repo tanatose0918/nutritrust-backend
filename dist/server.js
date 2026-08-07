@@ -16,6 +16,7 @@ const search_1 = __importDefault(require("./routes/search"));
 const compare_1 = __importDefault(require("./routes/compare"));
 const waitlist_1 = __importDefault(require("./routes/waitlist"));
 const users_1 = __importDefault(require("./routes/users"));
+const webAnalytics_1 = __importDefault(require("./routes/webAnalytics"));
 const Brand_1 = require("./models/Brand");
 const Ingredient_1 = require("./models/Ingredient");
 const Provider_1 = require("./models/Provider");
@@ -25,6 +26,7 @@ const ProductAnalytics_1 = require("./models/ProductAnalytics");
 const Waitlist_1 = require("./models/Waitlist");
 const Survey_1 = require("./models/Survey");
 const User_1 = require("./models/User");
+const WebAnalytics_1 = require("./models/WebAnalytics");
 dotenv_1.default.config();
 const server = (0, fastify_1.default)({
     logger: true
@@ -50,7 +52,7 @@ async function start() {
         });
         // Overview endpoint for all collections
         server.get('/api/collections', async () => {
-            const [brandsCount, ingredientsCount, providersCount, productsCount, scienceSummariesCount, analyticsCount, waitlistCount, surveysCount, usersCount] = await Promise.all([
+            const [brandsCount, ingredientsCount, providersCount, productsCount, scienceSummariesCount, analyticsCount, waitlistCount, surveysCount, usersCount, webAnalyticsCount] = await Promise.all([
                 Brand_1.BrandModel.countDocuments(),
                 Ingredient_1.IngredientModel.countDocuments(),
                 Provider_1.ProviderModel.countDocuments(),
@@ -59,7 +61,8 @@ async function start() {
                 ProductAnalytics_1.ProductAnalyticsModel.countDocuments(),
                 Waitlist_1.WaitlistModel.countDocuments(),
                 Survey_1.SurveyModel.countDocuments(),
-                User_1.UserModel.countDocuments()
+                User_1.UserModel.countDocuments(),
+                WebAnalytics_1.WebAnalyticsModel.countDocuments()
             ]);
             return {
                 success: true,
@@ -73,7 +76,8 @@ async function start() {
                     products_analytics: { count: analyticsCount, endpoint: '/api/analytics/:productId' },
                     waitlists: { count: waitlistCount, endpoint: '/api/waitlist/count' },
                     surveys: { count: surveysCount, endpoint: '/api/surveys' },
-                    users: { count: usersCount, endpoint: '/api/users' }
+                    users: { count: usersCount, endpoint: '/api/users' },
+                    web_analytics: { count: webAnalyticsCount, endpoint: '/api/web-analytics' }
                 }
             };
         });
@@ -87,6 +91,7 @@ async function start() {
         await server.register(compare_1.default);
         await server.register(waitlist_1.default);
         await server.register(users_1.default);
+        await server.register(webAnalytics_1.default);
         await server.listen({ port: PORT, host: HOST });
         console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);
     }

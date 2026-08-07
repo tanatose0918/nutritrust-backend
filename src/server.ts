@@ -11,6 +11,7 @@ import searchRoutes from './routes/search';
 import compareRoutes from './routes/compare';
 import waitlistRoutes from './routes/waitlist';
 import userRoutes from './routes/users';
+import webAnalyticsRoutes from './routes/webAnalytics';
 import { BrandModel } from './models/Brand';
 import { IngredientModel } from './models/Ingredient';
 import { ProviderModel } from './models/Provider';
@@ -20,6 +21,7 @@ import { ProductAnalyticsModel } from './models/ProductAnalytics';
 import { WaitlistModel } from './models/Waitlist';
 import { SurveyModel } from './models/Survey';
 import { UserModel } from './models/User';
+import { WebAnalyticsModel } from './models/WebAnalytics';
 
 dotenv.config();
 
@@ -61,7 +63,8 @@ async function start() {
         analyticsCount,
         waitlistCount,
         surveysCount,
-        usersCount
+        usersCount,
+        webAnalyticsCount
       ] = await Promise.all([
         BrandModel.countDocuments(),
         IngredientModel.countDocuments(),
@@ -71,7 +74,8 @@ async function start() {
         ProductAnalyticsModel.countDocuments(),
         WaitlistModel.countDocuments(),
         SurveyModel.countDocuments(),
-        UserModel.countDocuments()
+        UserModel.countDocuments(),
+        WebAnalyticsModel.countDocuments()
       ]);
 
       return {
@@ -86,7 +90,8 @@ async function start() {
           products_analytics: { count: analyticsCount, endpoint: '/api/analytics/:productId' },
           waitlists: { count: waitlistCount, endpoint: '/api/waitlist/count' },
           surveys: { count: surveysCount, endpoint: '/api/surveys' },
-          users: { count: usersCount, endpoint: '/api/users' }
+          users: { count: usersCount, endpoint: '/api/users' },
+          web_analytics: { count: webAnalyticsCount, endpoint: '/api/web-analytics' }
         }
       };
     });
@@ -101,6 +106,7 @@ async function start() {
     await server.register(compareRoutes);
     await server.register(waitlistRoutes);
     await server.register(userRoutes);
+    await server.register(webAnalyticsRoutes);
 
     await server.listen({ port: PORT, host: HOST });
     console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);
