@@ -20,15 +20,18 @@ async function webAnalyticsRoutes(fastify) {
     fastify.get('/api/web-analytics', async (req, reply) => {
         try {
             const todayStr = new Date().toISOString().split('T')[0];
-            const analytics = await WebAnalytics_1.WebAnalyticsModel.findOne({ snapshot_date: todayStr });
-            const earlyAdoptersCount = await User_1.UserModel.countDocuments();
+            const [analytics, earlyAdoptersCount] = await Promise.all([
+                WebAnalytics_1.WebAnalyticsModel.findOne({ snapshot_date: todayStr }),
+                User_1.UserModel.countDocuments()
+            ]);
+            const pending = analyticsBuffer_1.analyticsBuffer.getPendingStats();
             return {
                 success: true,
                 data: {
-                    early_adopters: earlyAdoptersCount || 142,
-                    unique_visitors: (analytics?.unique_visitors_count || 0) + 1250,
-                    product_searches: (analytics?.total_product_searches || 0) + 3840,
-                    last_updated: analytics?.last_updated || new Date()
+                    early_adopters: earlyAdoptersCount || 0,
+                    unique_visitors: (analytics?.unique_visitors_count || 0) + pending.pendingVisitors,
+                    product_searches: (analytics?.total_product_searches || 0) + pending.pendingSearches,
+                    last_updated: new Date()
                 }
             };
         }

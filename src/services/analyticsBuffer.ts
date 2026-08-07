@@ -24,6 +24,14 @@ class AnalyticsBuffer {
         this.searchCounter += 1;
     }
 
+    // 2.5 ดึงข้อมูลที่รอการ Flush ใน Memory มารวมกับ DB ใน Real-time
+    public getPendingStats() {
+        return {
+            pendingVisitors: this.activeSessions.size,
+            pendingSearches: this.searchCounter
+        };
+    }
+
     // 3. เริ่ม Thread Worker (อัปเดตลง MongoDB ทุกๆ 60 นาที = 3,600,000 ms)
     private startBatchScheduler() {
         const SIXTY_MINUTES = 60 * 60 * 1000;
