@@ -18,6 +18,7 @@ import { EvidenceModel } from './models/Evidence';
 import { ProductAnalyticsModel } from './models/ProductAnalytics';
 import { WaitlistModel } from './models/Waitlist';
 import { SurveyModel } from './models/Survey';
+import { UserModel } from './models/User';
 
 dotenv.config();
 
@@ -58,7 +59,8 @@ async function start() {
         scienceSummariesCount,
         analyticsCount,
         waitlistCount,
-        surveysCount
+        surveysCount,
+        usersCount
       ] = await Promise.all([
         BrandModel.countDocuments(),
         IngredientModel.countDocuments(),
@@ -67,7 +69,8 @@ async function start() {
         EvidenceModel.countDocuments(),
         ProductAnalyticsModel.countDocuments(),
         WaitlistModel.countDocuments(),
-        SurveyModel.countDocuments()
+        SurveyModel.countDocuments(),
+        UserModel.countDocuments()
       ]);
 
       return {
@@ -81,7 +84,8 @@ async function start() {
           science_summaries: { count: scienceSummariesCount, endpoint: '/api/science-summaries' },
           products_analytics: { count: analyticsCount, endpoint: '/api/analytics/:productId' },
           waitlists: { count: waitlistCount, endpoint: '/api/waitlist/count' },
-          surveys: { count: surveysCount, endpoint: '/api/surveys' }
+          surveys: { count: surveysCount, endpoint: '/api/surveys' },
+          users: { count: usersCount, endpoint: '/api/users' }
         }
       };
     });
