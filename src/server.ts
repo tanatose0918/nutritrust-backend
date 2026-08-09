@@ -13,6 +13,7 @@ import waitlistRoutes from './routes/waitlist';
 import userRoutes from './routes/users';
 import webAnalyticsRoutes from './routes/webAnalytics';
 import tokenizerRoutes from './routes/tokenizer';
+import aiAdviceRoutes from './routes/aiAdvice';
 import { batchCacheWorker } from './services/cacheWorker';
 import { BrandModel } from './models/Brand';
 import { IngredientModel } from './models/Ingredient';
@@ -110,6 +111,7 @@ async function start() {
     await server.register(userRoutes);
     await server.register(webAnalyticsRoutes);
     await server.register(tokenizerRoutes);
+    await server.register(aiAdviceRoutes);
 
     await server.listen({ port: PORT, host: HOST });
     console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);

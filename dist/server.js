@@ -18,6 +18,7 @@ const waitlist_1 = __importDefault(require("./routes/waitlist"));
 const users_1 = __importDefault(require("./routes/users"));
 const webAnalytics_1 = __importDefault(require("./routes/webAnalytics"));
 const tokenizer_1 = __importDefault(require("./routes/tokenizer"));
+const aiAdvice_1 = __importDefault(require("./routes/aiAdvice"));
 const cacheWorker_1 = require("./services/cacheWorker");
 const Brand_1 = require("./models/Brand");
 const Ingredient_1 = require("./models/Ingredient");
@@ -95,6 +96,7 @@ async function start() {
         await server.register(users_1.default);
         await server.register(webAnalytics_1.default);
         await server.register(tokenizer_1.default);
+        await server.register(aiAdvice_1.default);
         await server.listen({ port: PORT, host: HOST });
         console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);
         // Pre-warm product cache for sub-10ms response time
