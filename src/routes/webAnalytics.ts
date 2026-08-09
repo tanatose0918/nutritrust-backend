@@ -1,6 +1,7 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import { WebAnalyticsModel } from '../models/WebAnalytics';
 import { UserModel } from '../models/User';
+import { SurveyModel } from '../models/Survey';
 import { analyticsBuffer } from '../services/analyticsBuffer';
 
 export default async function webAnalyticsRoutes(fastify: FastifyInstance) {
@@ -22,10 +23,13 @@ export default async function webAnalyticsRoutes(fastify: FastifyInstance) {
     fastify.get('/api/web-analytics', async (req, reply) => {
         try {
             const todayStr = new Date().toISOString().split('T')[0];
-            const [analytics, earlyAdoptersCount] = await Promise.all([
+            const [analytics, usersCount, surveysCount] = await Promise.all([
                 WebAnalyticsModel.findOne({ snapshot_date: todayStr }),
-                UserModel.countDocuments()
+                UserModel.countDocuments(),
+                SurveyModel.countDocuments()
             ]);
+
+            const totalEarlyAdopters = Math.max(usersCount + surveysCount, usersCount, surveysCount);
 
             // รวมยอดที่บันทึกแล้วใน DB + ยอดสดที่เพิ่งยิงมาพักใน Buffer ช่วง 60 นาทีนี้
             const realTimeVisitors = (analytics?.unique_visitors_count || 0) + analyticsBuffer.getPendingSessionCount();
@@ -34,7 +38,7 @@ export default async function webAnalyticsRoutes(fastify: FastifyInstance) {
             return {
                 success: true,
                 data: {
-                    early_adopters: earlyAdoptersCount || 0,
+                    early_adopters: totalEarlyAdopters || 0,
                     unique_visitors: realTimeVisitors,
                     product_searches: realTimeSearches,
                     last_updated: analytics?.last_updated || new Date()
