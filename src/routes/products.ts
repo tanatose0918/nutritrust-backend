@@ -5,11 +5,15 @@ import { IngredientModel } from '../models/Ingredient';
 import { ProviderModel } from '../models/Provider';
 import { EvidenceModel } from '../models/Evidence';
 import { ProductAnalyticsModel } from '../models/ProductAnalytics';
+import { batchCacheWorker } from '../services/cacheWorker';
 
 interface GetProductsQuery {
   category?: string;
+  sub_category?: string;
+  health_goal?: string;
   brand?: string;
   search?: string;
+  sort?: string;
 }
 
 interface GetProductParams {
@@ -17,33 +21,75 @@ interface GetProductParams {
 }
 
 export default async function productRoutes(fastify: FastifyInstance) {
-  // GET /api/products - List products with high performance lean query & multi-field word search
+  // GET /api/products - List products with high performance lean query, multi-field search & unit price sorting
   fastify.get(
     '/api/products',
     async (request: FastifyRequest<{ Querystring: GetProductsQuery }>, reply: FastifyReply) => {
       try {
-        const { category, brand, search } = request.query;
+        const { category, sub_category, health_goal, brand, search, sort } = request.query;
         const query: Record<string, any> = {};
 
         if (category) query.category_slug = category;
+        if (sub_category) query.sub_category = sub_category;
         if (brand) query.brand_id = brand;
+
+        if (health_goal) {
+          const goalRegex = new RegExp(health_goal.trim(), 'i');
+          query.$or = [
+            { category_slug: goalRegex },
+            { sub_category: goalRegex }
+          ];
+        }
 
         if (search && search.trim() !== '') {
           const regex = new RegExp(search.trim(), 'i');
-          query.$or = [
+          const searchConditions = [
             { name: regex },
             { category_slug: regex },
             { sub_category: regex }
           ];
+
+          if (query.$or) {
+            query.$and = [{ $or: query.$or }, { $or: searchConditions }];
+            delete query.$or;
+          } else {
+            query.$or = searchConditions;
+          }
         }
 
-        const products = await ProductModel.find(query).lean();
+        let products = await ProductModel.find(query).lean();
+
+        // Calculate price_per_serving for sorting
+        const enrichedProducts = products.map((p) => {
+          let servings = 1;
+          if (p.serving_package) {
+            const match = p.serving_package.match(/(\d+)/);
+            if (match && match[1]) {
+              servings = parseInt(match[1], 10);
+            }
+          }
+          const pricePerServing = servings > 0 ? Number((p.min_price / servings).toFixed(2)) : p.min_price;
+          return {
+            ...p,
+            servings,
+            price_per_serving: pricePerServing
+          };
+        });
+
+        // Sorting options
+        if (sort === 'lowest_unit_price' || sort === 'unit_price') {
+          enrichedProducts.sort((a, b) => a.price_per_serving - b.price_per_serving);
+        } else if (sort === 'min_price_asc') {
+          enrichedProducts.sort((a, b) => a.min_price - b.min_price);
+        } else if (sort === 'min_price_desc') {
+          enrichedProducts.sort((a, b) => b.min_price - a.min_price);
+        }
 
         return reply.code(200).send({
           success: true,
           collection: 'products',
-          count: products.length,
-          data: products
+          count: enrichedProducts.length,
+          data: enrichedProducts
         });
       } catch (error: any) {
         fastify.log.error(error);
@@ -55,12 +101,24 @@ export default async function productRoutes(fastify: FastifyInstance) {
     }
   );
 
-  // GET /api/products/:id - Get a product by ID with full relation populates (Brand, Ingredients, Providers, Evidences, Analytics)
+  // GET /api/products/:id - Fast pre-computed cache lookup (<10ms response time) with DB fallback
   fastify.get(
     '/api/products/:id',
     async (request: FastifyRequest<{ Params: GetProductParams }>, reply: FastifyReply) => {
       try {
         const { id } = request.params;
+
+        // Check Batch Cache Worker first for ultra-fast response (<10ms)
+        const cachedProduct = batchCacheWorker.getCachedProduct(id);
+        if (cachedProduct) {
+          return reply.code(200).send({
+            success: true,
+            cached: true,
+            data: cachedProduct
+          });
+        }
+
+        // Cache-miss fallback to live DB lookup
         const product = await ProductModel.findOne({ $or: [{ id }, { _id: id }] }).lean();
 
         if (!product) {
@@ -97,6 +155,7 @@ export default async function productRoutes(fastify: FastifyInstance) {
 
         return reply.code(200).send({
           success: true,
+          cached: false,
           data: {
             ...product,
             brand,
@@ -151,6 +210,9 @@ export default async function productRoutes(fastify: FastifyInstance) {
     async (request: FastifyRequest<{ Body: any }>, reply: FastifyReply) => {
       try {
         const newProduct = await ProductModel.create(request.body as any);
+        // Refresh cache after product creation
+        await batchCacheWorker.precomputeProductPayloads();
+
         return reply.code(201).send({
           success: true,
           data: newProduct

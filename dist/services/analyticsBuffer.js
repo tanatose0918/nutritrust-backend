@@ -3,50 +3,35 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.analyticsBuffer = void 0;
 const WebAnalytics_1 = require("../models/WebAnalytics");
 const User_1 = require("../models/User");
-// In-Memory Buffer เพื่อรับ Traffic สดๆ ไม่ให้ MongoDB ร้อน
 class AnalyticsBuffer {
-    activeSessions = new Set(); // เก็บ Session ID ที่เข้าชมแล้ว
+    activeSessions = new Set();
     searchCounter = 0;
     intervalTimer = null;
     constructor() {
-        // รันครั้งแรกเมื่อหมวด Fastify ทำงาน
         this.startBatchScheduler();
     }
-    // 1. รับ Event เข้าชมเว็บ (Unique Session)
     trackSession(sessionId) {
-        if (sessionId) {
+        if (sessionId)
             this.activeSessions.add(sessionId);
-        }
     }
-    // 2. รับ Event การค้นหา
     trackSearch() {
         this.searchCounter += 1;
     }
-    // 3. เริ่ม Thread Worker (อัปเดตลง MongoDB ทุกๆ 60 นาที = 3,600,000 ms)
-    startBatchScheduler() {
-        const SIXTY_MINUTES = 60 * 60 * 1000;
-        this.intervalTimer = setInterval(async () => {
-            await this.flushToMongoDB();
-        }, SIXTY_MINUTES);
-    }
-    // เพิ่ม getters ดึงยอด Buffer ปัจจุบัน
     getPendingSessionCount() {
         return this.activeSessions.size;
     }
     getPendingSearchCount() {
         return this.searchCounter;
     }
-    getPendingStats() {
-        return {
-            pendingVisitors: this.activeSessions.size,
-            pendingSearches: this.searchCounter
-        };
+    startBatchScheduler() {
+        const SIXTY_MINUTES = 60 * 60 * 1000;
+        this.intervalTimer = setInterval(async () => {
+            await this.flushToMongoDB();
+        }, SIXTY_MINUTES);
     }
-    // 4. บันทึกลง MongoDB
     async flushToMongoDB() {
         try {
-            const todayStr = new Date().toISOString().split('T')[0]; // "2026-08-07"
-            // ดึงจำนวน Early Adopter ล่าสุดจาก DB จริง
+            const todayStr = new Date().toISOString().split('T')[0];
             const totalEarlyAdopters = await User_1.UserModel.countDocuments();
             const uniqueSessionCount = this.activeSessions.size;
             const searchesCount = this.searchCounter;
@@ -60,8 +45,7 @@ class AnalyticsBuffer {
                     last_updated: new Date()
                 }
             }, { upsert: true, new: true });
-            console.log(`[Analytics Worker] 🔄 Synced analytics to MongoDB at ${new Date().toISOString()}`);
-            // รีเซ็ต Memory Buffer หลัง Sync เสร็จ
+            console.log(`[Analytics Worker] 🔄 Synced to MongoDB at ${new Date().toISOString()}`);
             this.activeSessions.clear();
             this.searchCounter = 0;
         }
