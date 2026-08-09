@@ -1,0 +1,2962 @@
+[
+  {
+    "product_id": "p_001",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 250,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 93,
+      "repurchase_rate": 78
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 120,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 85,
+        "sold_count": "500",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_002",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 265,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 94,
+      "repurchase_rate": 79
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 125,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 88,
+        "sold_count": "520",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_009",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 280,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 95,
+      "repurchase_rate": 80
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 130,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 91,
+        "sold_count": "540",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_010",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 295,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 96,
+      "repurchase_rate": 81
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 135,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 94,
+        "sold_count": "560",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_011",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 310,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 97,
+      "repurchase_rate": 82
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 140,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 97,
+        "sold_count": "580",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_012",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 325,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 93,
+      "repurchase_rate": 83
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 145,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 100,
+        "sold_count": "600",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_013",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 340,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 94,
+      "repurchase_rate": 84
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 150,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 103,
+        "sold_count": "620",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_014",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 355,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 95,
+      "repurchase_rate": 85
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 155,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 106,
+        "sold_count": "640",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_015",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 370,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 94,
+      "packaging_quality": 94,
+      "customer_service": 96,
+      "repurchase_rate": 86
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 160,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 109,
+        "sold_count": "660",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_016",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 385,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 95,
+      "packaging_quality": 95,
+      "customer_service": 97,
+      "repurchase_rate": 87
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 165,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 112,
+        "sold_count": "680",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_003",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 400,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 96,
+      "packaging_quality": 96,
+      "customer_service": 93,
+      "repurchase_rate": 88
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 170,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 115,
+        "sold_count": "700",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_017",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 415,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 97,
+      "packaging_quality": 97,
+      "customer_service": 94,
+      "repurchase_rate": 89
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 175,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 118,
+        "sold_count": "720",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_018",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 430,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 95,
+      "repurchase_rate": 90
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 180,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 121,
+        "sold_count": "740",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_019",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 445,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 96,
+      "repurchase_rate": 91
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 185,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 124,
+        "sold_count": "760",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_020",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 460,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 97,
+      "repurchase_rate": 92
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 190,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 127,
+        "sold_count": "780",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_021",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 475,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 93,
+      "repurchase_rate": 78
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 195,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 130,
+        "sold_count": "800",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_022",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 490,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 94,
+      "repurchase_rate": 79
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 200,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 133,
+        "sold_count": "820",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_023",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 505,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 95,
+      "repurchase_rate": 80
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 205,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 136,
+        "sold_count": "840",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_024",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 520,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 96,
+      "repurchase_rate": 81
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 210,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 139,
+        "sold_count": "860",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_025",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 535,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 97,
+      "repurchase_rate": 82
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 215,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 142,
+        "sold_count": "880",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_004",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 550,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 94,
+      "packaging_quality": 94,
+      "customer_service": 93,
+      "repurchase_rate": 83
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 220,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 145,
+        "sold_count": "900",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_026",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 565,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 95,
+      "packaging_quality": 95,
+      "customer_service": 94,
+      "repurchase_rate": 84
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 225,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 148,
+        "sold_count": "920",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_027",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 580,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 96,
+      "packaging_quality": 96,
+      "customer_service": 95,
+      "repurchase_rate": 85
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 230,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 151,
+        "sold_count": "940",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_028",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 595,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 97,
+      "packaging_quality": 97,
+      "customer_service": 96,
+      "repurchase_rate": 86
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 235,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 154,
+        "sold_count": "960",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_029",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 610,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 97,
+      "repurchase_rate": 87
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 240,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 157,
+        "sold_count": "980",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_030",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 625,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 93,
+      "repurchase_rate": 88
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 245,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 160,
+        "sold_count": "1000",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_031",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 640,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 94,
+      "repurchase_rate": 89
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 250,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 163,
+        "sold_count": "1020",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_032",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 655,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 95,
+      "repurchase_rate": 90
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 255,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 166,
+        "sold_count": "1040",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_033",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 670,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 96,
+      "repurchase_rate": 91
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 260,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 169,
+        "sold_count": "1060",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_034",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 685,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 97,
+      "repurchase_rate": 92
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 265,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 172,
+        "sold_count": "1080",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_035",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 700,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 93,
+      "repurchase_rate": 78
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 270,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 175,
+        "sold_count": "1100",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_036",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 715,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 94,
+      "repurchase_rate": 79
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 275,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 178,
+        "sold_count": "1120",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_037",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 730,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 94,
+      "packaging_quality": 94,
+      "customer_service": 95,
+      "repurchase_rate": 80
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 280,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 181,
+        "sold_count": "1140",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_038",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 745,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 95,
+      "packaging_quality": 95,
+      "customer_service": 96,
+      "repurchase_rate": 81
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 285,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 184,
+        "sold_count": "1160",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_039",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 760,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 96,
+      "packaging_quality": 96,
+      "customer_service": 97,
+      "repurchase_rate": 82
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 290,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 187,
+        "sold_count": "1180",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_040",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 775,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 97,
+      "packaging_quality": 97,
+      "customer_service": 93,
+      "repurchase_rate": 83
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 295,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 190,
+        "sold_count": "1200",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_041",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 790,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 94,
+      "repurchase_rate": 84
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 300,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 193,
+        "sold_count": "1220",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_042",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 805,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 95,
+      "repurchase_rate": 85
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 305,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 196,
+        "sold_count": "1240",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_043",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 820,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 96,
+      "repurchase_rate": 86
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 310,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 199,
+        "sold_count": "1260",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_044",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 835,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 97,
+      "repurchase_rate": 87
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 315,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 202,
+        "sold_count": "1280",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_045",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 850,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 93,
+      "repurchase_rate": 88
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 320,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 205,
+        "sold_count": "1300",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_046",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 865,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 94,
+      "repurchase_rate": 89
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 325,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 208,
+        "sold_count": "1320",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_005",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 880,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 95,
+      "repurchase_rate": 90
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 330,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 211,
+        "sold_count": "1340",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_047",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 895,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 96,
+      "repurchase_rate": 91
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 335,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 214,
+        "sold_count": "1360",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_048",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 910,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 94,
+      "packaging_quality": 94,
+      "customer_service": 97,
+      "repurchase_rate": 92
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 340,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 217,
+        "sold_count": "1380",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_049",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 925,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 95,
+      "packaging_quality": 95,
+      "customer_service": 93,
+      "repurchase_rate": 78
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 345,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 220,
+        "sold_count": "1400",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_050",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 940,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 96,
+      "packaging_quality": 96,
+      "customer_service": 94,
+      "repurchase_rate": 79
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 350,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 223,
+        "sold_count": "1420",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_051",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 955,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 97,
+      "packaging_quality": 97,
+      "customer_service": 95,
+      "repurchase_rate": 80
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 355,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 226,
+        "sold_count": "1440",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_052",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 970,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 96,
+      "repurchase_rate": 81
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 360,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 229,
+        "sold_count": "1460",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_053",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 985,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 97,
+      "repurchase_rate": 82
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 365,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 232,
+        "sold_count": "1480",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_006",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1000,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 93,
+      "repurchase_rate": 83
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 370,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 235,
+        "sold_count": "1500",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_054",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1015,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 94,
+      "repurchase_rate": 84
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 375,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 238,
+        "sold_count": "1520",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_055",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1030,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 95,
+      "repurchase_rate": 85
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 380,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 241,
+        "sold_count": "1540",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_056",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1045,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 96,
+      "repurchase_rate": 86
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 385,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 244,
+        "sold_count": "1560",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_057",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1060,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 97,
+      "repurchase_rate": 87
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 390,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 247,
+        "sold_count": "1580",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_058",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1075,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 93,
+      "repurchase_rate": 88
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 395,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 250,
+        "sold_count": "1600",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_059",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1090,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 94,
+      "packaging_quality": 94,
+      "customer_service": 94,
+      "repurchase_rate": 89
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 400,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 253,
+        "sold_count": "1620",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_060",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1105,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 95,
+      "packaging_quality": 95,
+      "customer_service": 95,
+      "repurchase_rate": 90
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 405,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 256,
+        "sold_count": "1640",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_061",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1120,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 96,
+      "packaging_quality": 96,
+      "customer_service": 96,
+      "repurchase_rate": 91
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 410,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 259,
+        "sold_count": "1660",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_062",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1135,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 97,
+      "packaging_quality": 97,
+      "customer_service": 97,
+      "repurchase_rate": 92
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 415,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 262,
+        "sold_count": "1680",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_007",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1150,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 93,
+      "repurchase_rate": 78
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 420,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 265,
+        "sold_count": "1700",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_063",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1165,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 94,
+      "repurchase_rate": 79
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 425,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 268,
+        "sold_count": "1720",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_064",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1180,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 95,
+      "repurchase_rate": 80
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 430,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 271,
+        "sold_count": "1740",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_065",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1195,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 96,
+      "repurchase_rate": 81
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 435,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 274,
+        "sold_count": "1760",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_066",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1210,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 97,
+      "repurchase_rate": 82
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 440,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 277,
+        "sold_count": "1780",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_067",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1225,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 93,
+      "repurchase_rate": 83
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 445,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 280,
+        "sold_count": "1800",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_068",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1240,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 94,
+      "repurchase_rate": 84
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 450,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 283,
+        "sold_count": "1820",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_069",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1255,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 95,
+      "repurchase_rate": 85
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 455,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 286,
+        "sold_count": "1840",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_070",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1270,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 94,
+      "packaging_quality": 94,
+      "customer_service": 96,
+      "repurchase_rate": 86
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 460,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 289,
+        "sold_count": "1860",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_071",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1285,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 95,
+      "packaging_quality": 95,
+      "customer_service": 97,
+      "repurchase_rate": 87
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 465,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 292,
+        "sold_count": "1880",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_008",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1300,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 96,
+      "packaging_quality": 96,
+      "customer_service": 93,
+      "repurchase_rate": 88
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 470,
+        "sold_count": "1k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 295,
+        "sold_count": "1900",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_072",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1315,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 97,
+      "packaging_quality": 97,
+      "customer_service": 94,
+      "repurchase_rate": 89
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 475,
+        "sold_count": "2k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 298,
+        "sold_count": "1920",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_073",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1330,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 92,
+      "packaging_quality": 94,
+      "customer_service": 95,
+      "repurchase_rate": 90
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 480,
+        "sold_count": "3k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 301,
+        "sold_count": "1940",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_074",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1345,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 93,
+      "packaging_quality": 95,
+      "customer_service": 96,
+      "repurchase_rate": 91
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 485,
+        "sold_count": "4k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 304,
+        "sold_count": "1960",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_075",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1360,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 94,
+      "packaging_quality": 96,
+      "customer_service": 97,
+      "repurchase_rate": 92
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 490,
+        "sold_count": "5k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 307,
+        "sold_count": "1980",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_076",
+    "merchant_score": 4.5,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1375,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 95,
+      "delivery_speed": 95,
+      "packaging_quality": 97,
+      "customer_service": 93,
+      "repurchase_rate": 78
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 495,
+        "sold_count": "6k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 310,
+        "sold_count": "2000",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_077",
+    "merchant_score": 4.6,
+    "ratings_breakdown": {
+      "rating_score": 4.6,
+      "total_reviews": 1390,
+      "satisfaction_rate": 96
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 96,
+      "delivery_speed": 96,
+      "packaging_quality": 94,
+      "customer_service": 94,
+      "repurchase_rate": 79
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 500,
+        "sold_count": "7k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 313,
+        "sold_count": "2020",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_078",
+    "merchant_score": 4.7,
+    "ratings_breakdown": {
+      "rating_score": 4.7,
+      "total_reviews": 1405,
+      "satisfaction_rate": 97
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 97,
+      "delivery_speed": 97,
+      "packaging_quality": 95,
+      "customer_service": 95,
+      "repurchase_rate": 80
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 505,
+        "sold_count": "8k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 316,
+        "sold_count": "2040",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_079",
+    "merchant_score": 4.8,
+    "ratings_breakdown": {
+      "rating_score": 4.8,
+      "total_reviews": 1420,
+      "satisfaction_rate": 98
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 98,
+      "delivery_speed": 92,
+      "packaging_quality": 96,
+      "customer_service": 96,
+      "repurchase_rate": 81
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 510,
+        "sold_count": "9k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 319,
+        "sold_count": "2060",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  },
+  {
+    "product_id": "p_080",
+    "merchant_score": 4.9,
+    "ratings_breakdown": {
+      "rating_score": 4.9,
+      "total_reviews": 1435,
+      "satisfaction_rate": 99
+    },
+    "merchant_chart_metrics": {
+      "authenticity": 99,
+      "delivery_speed": 93,
+      "packaging_quality": 97,
+      "customer_service": 97,
+      "repurchase_rate": 82
+    },
+    "platform_breakdown": {
+      "shopee": {
+        "rating": 4.8,
+        "review_count": 515,
+        "sold_count": "10k+",
+        "store_type": "Official Store",
+        "url": "https://shopee.co.th"
+      },
+      "lazada": {
+        "rating": 4.7,
+        "review_count": 322,
+        "sold_count": "2080",
+        "store_type": "LazMall",
+        "url": "https://lazada.co.th"
+      }
+    },
+    "reference_sources": [
+      "Shopee Official",
+      "LazMall",
+      "TikTok Shop"
+    ]
+  }
+]

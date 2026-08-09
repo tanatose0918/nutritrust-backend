@@ -1,0 +1,130 @@
+[
+  {
+    "evidence_id": "ev_vitaminc_001",
+    "id": "ev_vitaminc_001",
+    "benefit_title": "Vitamin C ในการเสริมสร้างภูมิคุ้มกันและลดความรุนแรงของไข้หวัด",
+    "evidence_level": "High Level A (Meta-Analysis)",
+    "pubmed_id": "29099763",
+    "summary": "การรับประทาน Vitamin C ปริมาณ 1,000 mg/วัน ช่วยกระตุ้นการทำงานของ White Blood Cells (Phagocytes และ T-Cells) และช่วยลดระยะเวลาการเป็นไข้หวัดลง 8-14%"
+  },
+  {
+    "evidence_id": "ev_vitaminc_002",
+    "id": "ev_vitaminc_002",
+    "benefit_title": "บทบาทของ Vitamin C ต่อการสังเคราะห์คอลลาเจนในชั้นผิว",
+    "evidence_level": "High Level A (Clinical Trial)",
+    "pubmed_id": "30101672",
+    "summary": "Vitamin C ทำหน้าที่เป็น Co-factor สำคัญสำหรับเอนไซม์ Prolyl Hydroxylase ช่วยเพิ่มความแข็งแรงของเส้นใยคอลลาเจนในชั้นผิวหนังและต่อต้านอนุมูลอิสระจากแสง UV"
+  },
+  {
+    "evidence_id": "ev_fishoil_001",
+    "id": "ev_fishoil_001",
+    "benefit_title": "Omega-3 (EPA/DHA) ในการลดระดับไตรกลีเซอไรด์และดูแลหลอดเลือดหัวใจ",
+    "evidence_level": "High Level A (Randomized Controlled Trial)",
+    "pubmed_id": "31563508",
+    "summary": "กรดไขมัน EPA และ DHA เข้มข้น ช่วยลดระดับ Triglycerides ในเลือดได้ 20-30% พร้อมทั้งลดการอักเสบของหลอดเลือดหัวใจและยับยั้งการเกาะตัวของเกล็ดเลือด"
+  },
+  {
+    "evidence_id": "ev_fishoil_002",
+    "id": "ev_fishoil_002",
+    "benefit_title": "DHA ต่อการบำรุงเซลล์สมอง ชะลอความเสื่อมของระบบประสาทและความจำ",
+    "evidence_level": "Moderate Level B (Clinical Study)",
+    "pubmed_id": "28466549",
+    "summary": "DHA เป็นกรดไขมันโครงสร้างหลักในเยื่อหุ้มเซลล์สมอง การได้รับ DHA วันละ 500-1,000 mg ช่วยเพิ่มความคล่องตัวของการส่งสัญญาณประสาทและการจำจดข้อมูล"
+  },
+  {
+    "evidence_id": "ev_magnesium_001",
+    "id": "ev_magnesium_001",
+    "benefit_title": "Magnesium Glycinate ในการปรับสมดุลระบบประสาทและคุณภาพการนอนหลับ",
+    "evidence_level": "High Level A (Clinical Trial)",
+    "pubmed_id": "28445426",
+    "summary": "Magnesium Glycinate จับกับตัวรับ GABA ในสมอง ช่วยลดฮอร์โมนความเครียด Cortisol และช่วยให้ร่างกายเข้าสู่ภาวะ Deep Sleep ได้รวดเร็วขึ้น 27%"
+  },
+  {
+    "evidence_id": "ev_magnesium_002",
+    "id": "ev_magnesium_002",
+    "benefit_title": "ผลของ Magnesium ต่อการผ่อนคลายกล้ามเนื้อและลดการเกิดตะคริว",
+    "evidence_level": "Moderate Level B (Double-Blind Study)",
+    "pubmed_id": "29849470",
+    "summary": "Magnesium ควบคุมการเข้าออกของ Calcium Ion ในเซลล์กล้ามเนื้อ ป้องกันภาวะกล้ามเนื้อหดเกร็งค้าง และลดความถี่ของการเกิดตะคริวขณะนอนหรือออกกำลังกาย"
+  },
+  {
+    "evidence_id": "ev_astax_001",
+    "id": "ev_astax_001",
+    "benefit_title": "Astaxanthin สารต้านอนุมูลอิสระประสิทธิภาพสูงต่อการชะลอวัยและริ้วรอย",
+    "evidence_level": "High Level A (Human Trial)",
+    "pubmed_id": "32470701",
+    "summary": "Astaxanthin มีฤทธิ์ต้านอนุมูลอิสระแรงกว่า Vitamin C 6,000 เท่า ช่วยปกป้องคอลลาเจนในชั้นผิวจากการทำลายของรังสี UVA และเพิ่มความยืดหยุ่นของผิวอย่างมีนัยสำคัญ"
+  },
+  {
+    "evidence_id": "ev_astax_002",
+    "id": "ev_astax_002",
+    "benefit_title": "Hydrolyzed Collagen Tripeptide ต่อการฟื้นฟูผิวและข้อต่อ",
+    "evidence_level": "High Level A (Clinical Trial)",
+    "pubmed_id": "31627309",
+    "summary": "คอลลาเจนไดเปปไทด์/ไตรเปปไทด์ โมเลกุลเล็ก ดูดซึมเข้าสู่กระแสเลือดได้เร็ว กระตุ้น Chondrocytes ในกระดูกอ่อน และช่วยเพิ่มความชุ่มชื้นของผิวหนัง"
+  },
+  {
+    "evidence_id": "ev_coq10_001",
+    "id": "ev_coq10_001",
+    "benefit_title": "Coenzyme Q10 ในการสร้างพลังงาน ATP ระดับไมโตคอนเดรียและกล้ามเนื้อหัวใจ",
+    "evidence_level": "High Level A (Meta-Analysis)",
+    "pubmed_id": "26512574",
+    "summary": "CoQ10 เป็นส่วนประกอบสำคัญใน Electron Transport Chain ของ Mitochondria ช่วยเพิ่มการสร้าง ATP ในกล้ามเนื้อหัวใจและลดอาการเหนื่อยล้าในผู้สูงอายุ"
+  },
+  {
+    "evidence_id": "ev_coq10_002",
+    "id": "ev_coq10_002",
+    "benefit_title": "การเสริม CoQ10 เพื่อชดเชยภาวะสูญเสียจากยาลดไขมันกลุ่ม Statin",
+    "evidence_level": "Moderate Level B (Clinical Trial)",
+    "pubmed_id": "30255868",
+    "summary": "ยาลดไขมัน Statin ยับยั้งการสร้าง CoQ10 ในร่างกาย การเสริม CoQ10 100-200 mg/วัน ช่วยลดอาการปวดเมื่อยกล้ามเนื้อ (Statin-induced myopathy) ได้ถึง 40%"
+  },
+  {
+    "evidence_id": "ev_uc2_001",
+    "id": "ev_uc2_001",
+    "benefit_title": "Undenatured Type II Collagen (UC-II) ในการฟื้นฟูข้อต่อและเพิ่มความยืดหยุ่น",
+    "evidence_level": "High Level A (Randomized Controlled Trial)",
+    "pubmed_id": "24153020",
+    "summary": "UC-II เพียง 40 mg/วัน ออกฤทธิ์ผ่านกลไก Oral Tolerance ชะลอการทำลายกระดูกอ่อนข้อเข่า เพิ่มระยะเวลาการเหยียดข้อเข่าได้ดีกว่า Glucosamine ถึง 2 เท่า"
+  },
+  {
+    "evidence_id": "ev_uc2_002",
+    "id": "ev_uc2_002",
+    "benefit_title": "Glucosamine & Chondroitin ในการลดการสึกหรอของกระดูกอ่อนข้อต่อ",
+    "evidence_level": "High Level A (Clinical Trial)",
+    "pubmed_id": "26818908",
+    "summary": "Glucosamine Sulfate 1,500 mg ช่วยเสริมสร้างการสังเคราะห์ Glycosaminoglycans เพิ่มน้ำเลี้ยงข้อต่อ และลดความเจ็บปวดขณะเดินหรือลงน้ำหนัก"
+  },
+  {
+    "evidence_id": "ev_lcarnitine_001",
+    "id": "ev_lcarnitine_001",
+    "benefit_title": "L-Carnitine L-Tartrate (Carnipure®) ในการเร่งการเผาผลาญไขมันและเพิ่มความอึด",
+    "evidence_level": "High Level A (Clinical Study)",
+    "pubmed_id": "32354158",
+    "summary": "L-Carnitine ทำหน้าที่ขนส่ง Long-chain Fatty Acids เข้าสู่ไมโตคอนเดรียเพื่อเบิร์นเป็นพลังงาน ช่วยเร่งการเผาผลาญไขมันขณะออกกำลังกายแบบ Cardio"
+  },
+  {
+    "evidence_id": "ev_lcarnitine_002",
+    "id": "ev_lcarnitine_002",
+    "benefit_title": "สารสกัดชาเขียว (EGCG) ต่อการเพิ่มอัตราการเผาผลาญพลังงาน (Thermogenesis)",
+    "evidence_level": "Moderate Level B (Clinical Trial)",
+    "pubmed_id": "31926645",
+    "summary": "EGCG ยับยั้งเอนไซม์ COMT ช่วยยืดอายุการทำงานของ Norepinephrine ส่งผลให้อัตราการเผาผลาญแคลอรีขณะพักและขณะออกกำลังกายเพิ่มขึ้น 4-5%"
+  },
+  {
+    "evidence_id": "ev_electrolytes_001",
+    "id": "ev_electrolytes_001",
+    "benefit_title": "Electrolytes (Na/K/Mg) ในการรักษาสมดุลน้ำและป้องกันการเกิดตะคริว",
+    "evidence_level": "High Level A (Sports Medicine Study)",
+    "pubmed_id": "31448317",
+    "summary": "เกลือแร่อิออนสมดุลช่วยทดแทนการเสียเหงื่อขณะเต้นแอโรบิกหรือคาร์ดิโอ ชะลอภาวะ Dehydration และป้องกันภาวะกล้ามเนื้อหดเกร็งค้างอย่างได้ผล"
+  },
+  {
+    "evidence_id": "ev_electrolytes_002",
+    "id": "ev_electrolytes_002",
+    "benefit_title": "Protein Isolate ในการฟื้นฟูและซ่อมแซมเส้นใยกล้ามเนื้อหลังออกกำลังกาย",
+    "evidence_level": "High Level A (Meta-Analysis)",
+    "pubmed_id": "29497353",
+    "summary": "การได้รับโปรตีนสกัดเข้มข้น 20-30g หลังออกกำลังกาย กระต้น mTOR Pathway ช่วยซ่อมแซมเส้นใยกล้ามเนื้อที่ฉีกขาดและลดอาการปวดเมื่อย (DOMS)"
+  }
+]

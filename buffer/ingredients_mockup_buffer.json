@@ -1,0 +1,62 @@
+[
+  {
+    "id": "igd_001",
+    "name": "Vitamin C (Ascorbic Acid)",
+    "provider_id": "prv_001"
+  },
+  {
+    "id": "igd_002",
+    "name": "Omega-3 (EPA/DHA Fish Oil)",
+    "provider_id": "prv_002"
+  },
+  {
+    "id": "igd_003",
+    "name": "Magnesium Glycinate / Oxide",
+    "provider_id": "prv_005"
+  },
+  {
+    "id": "igd_004",
+    "name": "Coenzyme Q10 (CoQ10)",
+    "provider_id": "prv_001"
+  },
+  {
+    "id": "igd_005",
+    "name": "Acerola Cherry Extract",
+    "provider_id": "prv_004"
+  },
+  {
+    "id": "igd_006",
+    "name": "Undenatured Collagen Type II (UC-II)",
+    "provider_id": "prv_006"
+  },
+  {
+    "id": "igd_007",
+    "name": "L-Carnitine L-Tartrate (Carnipure®)",
+    "provider_id": "prv_005"
+  },
+  {
+    "id": "igd_008",
+    "name": "Electrolytes (Sodium, Potassium, Magnesium)",
+    "provider_id": "prv_004"
+  },
+  {
+    "id": "igd_009",
+    "name": "Astaxanthin (Natural Microalgae)",
+    "provider_id": "prv_003"
+  },
+  {
+    "id": "igd_010",
+    "name": "Hydrolyzed Fish Collagen Tripeptide",
+    "provider_id": "prv_003"
+  },
+  {
+    "id": "igd_011",
+    "name": "Glucosamine Sulfate & Chondroitin",
+    "provider_id": "prv_006"
+  },
+  {
+    "id": "igd_012",
+    "name": "Green Tea Extract (EGCG)",
+    "provider_id": "prv_004"
+  }
+]

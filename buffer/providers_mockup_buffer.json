@@ -1,0 +1,44 @@
+[
+  {
+    "id": "prv_001",
+    "name": "DSM Nutritional Products",
+    "provide_at": "Switzerland / Netherlands",
+    "traceability_process": "ISO 9001/FSSC 22000 certified high-purity USP grade vitamin & CoQ10 synthesis with 100% batch traceability."
+  },
+  {
+    "id": "prv_002",
+    "name": "Aker BioMarine & VivoMega",
+    "provide_at": "Norway",
+    "traceability_process": "MSC-certified sustainable deep-sea cold-water fish oil extraction using eco-harvesting and molecular distillation."
+  },
+  {
+    "id": "prv_003",
+    "name": "Fuji Chemical & AstaReal",
+    "provide_at": "Japan",
+    "traceability_process": "Closed-photobioreactor cultivation of Haematococcus pluvialis microalgae for 100% pure natural Astaxanthin & low-molecular fish collagen tripeptide."
+  },
+  {
+    "id": "prv_004",
+    "name": "BASF & Beneo Human Nutrition",
+    "provide_at": "Germany",
+    "traceability_process": "High-solubility pharmaceutical grade Acerola fruit extraction and precision electrolyte mineral chelation."
+  },
+  {
+    "id": "prv_005",
+    "name": "Lonza Group (Carnipure®) & Albion",
+    "provide_at": "Switzerland / USA",
+    "traceability_process": "Patented L-Carnitine L-Tartrate (Carnipure®) crystallization and TRAACS® chelated Magnesium bisglycinate synthesis."
+  },
+  {
+    "id": "prv_006",
+    "name": "Lonza Consumer Health (InterHealth)",
+    "provide_at": "USA",
+    "traceability_process": "Patented low-temperature non-enzymatic extraction preserving native 3D triple-helix structure of Undenatured Type II Collagen (UC-II®)."
+  },
+  {
+    "id": "prv_007",
+    "name": "Kemin Human Nutrition",
+    "provide_at": "USA",
+    "traceability_process": "FloraGLO® Lutein extraction and microbial fermentation Hyaluronic Acid joint lubrication matrix."
+  }
+]

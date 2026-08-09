@@ -1,0 +1,3042 @@
+[
+  {
+    "id": "p_001",
+    "brand_id": "br_001",
+    "name": "Blackmores Bio C 1000 mg",
+    "category_slug": "vitamin-c",
+    "sub_category": "immunity-skin",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-150",
+    "min_price": 1090,
+    "max_price": 1390,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Blackmores Bio C 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง immunity-skin อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_002",
+    "brand_id": "br_002",
+    "name": "Vistra Acerola Cherry 1000 mg",
+    "category_slug": "vitamin-c",
+    "sub_category": "skin-collagen",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_005",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-45",
+    "min_price": 329,
+    "max_price": 499,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra Acerola Cherry 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง skin-collagen อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_009",
+    "brand_id": "br_004",
+    "name": "Mega We Care Nat C",
+    "category_slug": "vitamin-c",
+    "sub_category": "immunity-stomach",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-60",
+    "min_price": 480,
+    "max_price": 650,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Mega We Care Nat C ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง immunity-stomach อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_010",
+    "brand_id": "br_003",
+    "name": "NOW Foods Vitamin C-1000",
+    "category_slug": "vitamin-c",
+    "sub_category": "high-potency",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "capsule-100",
+    "min_price": 520,
+    "max_price": 750,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods Vitamin C-1000 ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง high-potency อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_011",
+    "brand_id": "br_008",
+    "name": "DHC Vitamin C 60 Days",
+    "category_slug": "vitamin-c",
+    "sub_category": "daily-maintenance",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "capsule-120",
+    "min_price": 180,
+    "max_price": 250,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน DHC Vitamin C 60 Days ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง daily-maintenance อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_012",
+    "brand_id": "br_009",
+    "name": "Hicee Vitamin C Chewable",
+    "category_slug": "vitamin-c",
+    "sub_category": "chewable-daily",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "tablet-50",
+    "min_price": 120,
+    "max_price": 160,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Hicee Vitamin C Chewable ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง chewable-daily อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_013",
+    "brand_id": "br_010",
+    "name": "Kirkland Signature Vitamin C 1000mg",
+    "category_slug": "vitamin-c",
+    "sub_category": "family-value",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-500",
+    "min_price": 890,
+    "max_price": 1190,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Kirkland Signature Vitamin C 1000mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง family-value อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_014",
+    "brand_id": "br_011",
+    "name": "21st Century Vitamin C 1000 mg",
+    "category_slug": "vitamin-c",
+    "sub_category": "budget-immune",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-110",
+    "min_price": 290,
+    "max_price": 390,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน 21st Century Vitamin C 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง budget-immune อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_015",
+    "brand_id": "br_012",
+    "name": "California Gold Nutrition Gold C 1000mg",
+    "category_slug": "vitamin-c",
+    "sub_category": "usp-grade",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "capsule-60",
+    "min_price": 220,
+    "max_price": 320,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน California Gold Nutrition Gold C 1000mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง usp-grade อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_016",
+    "brand_id": "br_013",
+    "name": "Demosana Vitamin C Effervescent",
+    "category_slug": "vitamin-c",
+    "sub_category": "effervescent",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_001",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-20",
+    "min_price": 115,
+    "max_price": 150,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Demosana Vitamin C Effervescent ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง effervescent อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_vitaminc_001",
+      "ev_vitaminc_002"
+    ]
+  },
+  {
+    "id": "p_003",
+    "brand_id": "br_004",
+    "name": "Mega We Care Fish Oil 1000 mg",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "brain-heart",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "softgel-100",
+    "min_price": 450,
+    "max_price": 590,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Mega We Care Fish Oil 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง brain-heart อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_017",
+    "brand_id": "br_001",
+    "name": "Blackmores Fish Oil 1000 mg Odourless",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "odourless-brain",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "softgel-200",
+    "min_price": 790,
+    "max_price": 1050,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Blackmores Fish Oil 1000 mg Odourless ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง odourless-brain อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_018",
+    "brand_id": "br_003",
+    "name": "NOW Foods Omega-3 1000 mg",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "molecular-distilled",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "softgel-200",
+    "min_price": 650,
+    "max_price": 890,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods Omega-3 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง molecular-distilled อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_019",
+    "brand_id": "br_002",
+    "name": "Vistra Salmon Fish Oil 1000 mg",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "salmon-omega",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "softgel-100",
+    "min_price": 350,
+    "max_price": 480,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra Salmon Fish Oil 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง salmon-omega อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_020",
+    "brand_id": "br_005",
+    "name": "Swisse Ultiboost Odourless Wild Fish Oil",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "wild-ocean",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "softgel-400",
+    "min_price": 1190,
+    "max_price": 1490,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Swisse Ultiboost Odourless Wild Fish Oil ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง wild-ocean อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_021",
+    "brand_id": "br_010",
+    "name": "Kirkland Signature Fish Oil 1000 mg",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "concentrated-value",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "softgel-400",
+    "min_price": 950,
+    "max_price": 1250,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Kirkland Signature Fish Oil 1000 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง concentrated-value อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_022",
+    "brand_id": "br_014",
+    "name": "Nordic Naturals Ultimate Omega",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "triglyceride-premium",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1280mg"
+      }
+    ],
+    "serving_package": "softgel-120",
+    "min_price": 1890,
+    "max_price": 2350,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Nordic Naturals Ultimate Omega ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง triglyceride-premium อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_023",
+    "brand_id": "br_015",
+    "name": "Carlson Labs The Very Finest Fish Oil",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "norwegian-deepsea",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1600mg"
+      }
+    ],
+    "serving_package": "softgel-120",
+    "min_price": 1450,
+    "max_price": 1850,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Carlson Labs The Very Finest Fish Oil ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง norwegian-deepsea อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_024",
+    "brand_id": "br_008",
+    "name": "DHC DHA 60 Days",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "dha-memory",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "510mg"
+      }
+    ],
+    "serving_package": "softgel-240",
+    "min_price": 490,
+    "max_price": 650,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน DHC DHA 60 Days ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง dha-memory อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_025",
+    "brand_id": "br_016",
+    "name": "GNC Triple Strength Fish Oil",
+    "category_slug": "omega-3-fish-oil",
+    "sub_category": "high-epa-cardio",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_002",
+        "volume": "1407mg"
+      }
+    ],
+    "serving_package": "softgel-120",
+    "min_price": 1690,
+    "max_price": 2100,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน GNC Triple Strength Fish Oil ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง high-epa-cardio อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_fishoil_001",
+      "ev_fishoil_002"
+    ]
+  },
+  {
+    "id": "p_004",
+    "brand_id": "br_003",
+    "name": "NOW Foods Magnesium Glycinate 200 mg",
+    "category_slug": "magnesium",
+    "sub_category": "sleep-relaxation",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "200mg"
+      }
+    ],
+    "serving_package": "tablet-180",
+    "min_price": 750,
+    "max_price": 990,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods Magnesium Glycinate 200 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง sleep-relaxation อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_026",
+    "brand_id": "br_000",
+    "name": "Magnesium Oxide 400 mg (General)",
+    "category_slug": "magnesium",
+    "sub_category": "basic-oxide",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "400mg"
+      }
+    ],
+    "serving_package": "tablet-100",
+    "min_price": 190,
+    "max_price": 280,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Magnesium Oxide 400 mg (General) ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง basic-oxide อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_027",
+    "brand_id": "br_001",
+    "name": "Blackmores Magnesium Muscle Relax",
+    "category_slug": "magnesium",
+    "sub_category": "muscle-cramps",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "300mg"
+      }
+    ],
+    "serving_package": "tablet-60",
+    "min_price": 490,
+    "max_price": 680,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Blackmores Magnesium Muscle Relax ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง muscle-cramps อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_028",
+    "brand_id": "br_002",
+    "name": "Vistra Magnesium Complex Plus B1 B6 B12",
+    "category_slug": "magnesium",
+    "sub_category": "nerve-stress",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "200mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 210,
+    "max_price": 320,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra Magnesium Complex Plus B1 B6 B12 ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง nerve-stress อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_029",
+    "brand_id": "br_017",
+    "name": "Doctor's Best High Absorption Magnesium",
+    "category_slug": "magnesium",
+    "sub_category": "traacs-chelated",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "200mg"
+      }
+    ],
+    "serving_package": "tablet-240",
+    "min_price": 890,
+    "max_price": 1190,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Doctor's Best High Absorption Magnesium ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง traacs-chelated อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_030",
+    "brand_id": "br_018",
+    "name": "KAL Magnesium Glycinate 350 mg",
+    "category_slug": "magnesium",
+    "sub_category": "gentle-bisglycinate",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "350mg"
+      }
+    ],
+    "serving_package": "tablet-160",
+    "min_price": 820,
+    "max_price": 1050,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน KAL Magnesium Glycinate 350 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง gentle-bisglycinate อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_031",
+    "brand_id": "br_019",
+    "name": "Life Extension Magnesium Caps 500 mg",
+    "category_slug": "magnesium",
+    "sub_category": "triple-magnesium",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "capsule-100",
+    "min_price": 490,
+    "max_price": 680,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Life Extension Magnesium Caps 500 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง triple-magnesium อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_032",
+    "brand_id": "br_020",
+    "name": "Nature's Bounty Magnesium 500 mg",
+    "category_slug": "magnesium",
+    "sub_category": "bone-muscle",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "tablet-100",
+    "min_price": 380,
+    "max_price": 520,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Nature's Bounty Magnesium 500 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง bone-muscle อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_033",
+    "brand_id": "br_005",
+    "name": "Swisse Ultiboost Magnesium",
+    "category_slug": "magnesium",
+    "sub_category": "energy-cramps",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "200mg"
+      }
+    ],
+    "serving_package": "tablet-120",
+    "min_price": 690,
+    "max_price": 890,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Swisse Ultiboost Magnesium ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง energy-cramps อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_034",
+    "brand_id": "br_011",
+    "name": "21st Century Magnesium 250 mg",
+    "category_slug": "magnesium",
+    "sub_category": "budget-muscle",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "250mg"
+      }
+    ],
+    "serving_package": "tablet-110",
+    "min_price": 240,
+    "max_price": 340,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน 21st Century Magnesium 250 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง budget-muscle อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_magnesium_001",
+      "ev_magnesium_002"
+    ]
+  },
+  {
+    "id": "p_035",
+    "brand_id": "br_000",
+    "name": "Astaxanthin 12 mg Softgels",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "high-antioxidant",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_009",
+        "volume": "12mg"
+      }
+    ],
+    "serving_package": "softgel-60",
+    "min_price": 850,
+    "max_price": 1150,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Astaxanthin 12 mg Softgels ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง high-antioxidant อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_036",
+    "brand_id": "br_002",
+    "name": "Vistra Astaxanthin 6 mg AstaReal",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "astareal-skin",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_009",
+        "volume": "6mg"
+      }
+    ],
+    "serving_package": "softgel-30",
+    "min_price": 490,
+    "max_price": 680,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra Astaxanthin 6 mg AstaReal ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง astareal-skin อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_037",
+    "brand_id": "br_004",
+    "name": "Mega We Care Astax 4 mg",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "natural-red-algae",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_009",
+        "volume": "4mg"
+      }
+    ],
+    "serving_package": "softgel-30",
+    "min_price": 390,
+    "max_price": 520,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Mega We Care Astax 4 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง natural-red-algae อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_038",
+    "brand_id": "br_003",
+    "name": "NOW Foods Astaxanthin 4 mg",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "zanthin-bioactive",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_009",
+        "volume": "4mg"
+      }
+    ],
+    "serving_package": "softgel-60",
+    "min_price": 680,
+    "max_price": 890,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods Astaxanthin 4 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง zanthin-bioactive อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_039",
+    "brand_id": "br_012",
+    "name": "California Gold Nutrition Astaxanthin 12mg",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "astapure-algae",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_009",
+        "volume": "12mg"
+      }
+    ],
+    "serving_package": "softgel-120",
+    "min_price": 990,
+    "max_price": 1350,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน California Gold Nutrition Astaxanthin 12mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง astapure-algae อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_040",
+    "brand_id": "br_008",
+    "name": "DHC Astaxanthin 30 Days",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "japanese-aging-care",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_009",
+        "volume": "9mg"
+      }
+    ],
+    "serving_package": "softgel-30",
+    "min_price": 420,
+    "max_price": 580,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน DHC Astaxanthin 30 Days ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง japanese-aging-care อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_041",
+    "brand_id": "br_021",
+    "name": "Meiji Amino Collagen Powder",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "fish-peptide-powder",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_010",
+        "volume": "5000mg"
+      }
+    ],
+    "serving_package": "powder-200g",
+    "min_price": 890,
+    "max_price": 1190,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Meiji Amino Collagen Powder ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง fish-peptide-powder อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_042",
+    "brand_id": "br_022",
+    "name": "Neocell Super Collagen + Vitamin C",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "type1-type3-skin",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_010",
+        "volume": "6000mg"
+      }
+    ],
+    "serving_package": "tablet-250",
+    "min_price": 950,
+    "max_price": 1290,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Neocell Super Collagen + Vitamin C ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง type1-type3-skin อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_043",
+    "brand_id": "br_023",
+    "name": "Amado Colligi Collagen Tripeptide",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "tripeptide-skin-joint",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_010",
+        "volume": "5000mg"
+      }
+    ],
+    "serving_package": "can-110g",
+    "min_price": 490,
+    "max_price": 690,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Amado Colligi Collagen Tripeptide ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง tripeptide-skin-joint อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_044",
+    "brand_id": "br_024",
+    "name": "Bomi Collagen Dipeptide 100,000mg",
+    "category_slug": "astaxanthin-collagen",
+    "sub_category": "dipeptide-fast-absorb",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_010",
+        "volume": "3000mg"
+      }
+    ],
+    "serving_package": "sachet-14",
+    "min_price": 390,
+    "max_price": 550,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Bomi Collagen Dipeptide 100,000mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง dipeptide-fast-absorb อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_astax_001",
+      "ev_astax_002"
+    ]
+  },
+  {
+    "id": "p_045",
+    "brand_id": "br_020",
+    "name": "Nature's Bounty Co Q-10 100 mg",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "cellular-heart-energy",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "100mg"
+      }
+    ],
+    "serving_package": "softgel-60",
+    "min_price": 690,
+    "max_price": 890,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Nature's Bounty Co Q-10 100 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง cellular-heart-energy อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_046",
+    "brand_id": "br_000",
+    "name": "CoQ10 30 mg Softgels (General)",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "basic-coq10",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "30mg"
+      }
+    ],
+    "serving_package": "softgel-30",
+    "min_price": 250,
+    "max_price": 350,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน CoQ10 30 mg Softgels (General) ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง basic-coq10 อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_005",
+    "brand_id": "br_005",
+    "name": "Swisse Ultiboost Multivitamin",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "active-multivitamin",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "50mg"
+      }
+    ],
+    "serving_package": "tablet-60",
+    "min_price": 890,
+    "max_price": 1190,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Swisse Ultiboost Multivitamin ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง active-multivitamin อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_047",
+    "brand_id": "br_001",
+    "name": "Blackmores CoQ10 150 mg",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "vascular-heart-care",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "150mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 790,
+    "max_price": 990,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Blackmores CoQ10 150 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง vascular-heart-care อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_048",
+    "brand_id": "br_002",
+    "name": "Vistra Coenzyme Q10 30 mg",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "daily-heart-vitality",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "30mg"
+      }
+    ],
+    "serving_package": "capsule-45",
+    "min_price": 330,
+    "max_price": 450,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra Coenzyme Q10 30 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง daily-heart-vitality อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_049",
+    "brand_id": "br_004",
+    "name": "Mega We Care Maxcover CoQ10 30 mg",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "ubiquinone-energy",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "30mg"
+      }
+    ],
+    "serving_package": "softgel-30",
+    "min_price": 310,
+    "max_price": 420,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Mega We Care Maxcover CoQ10 30 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง ubiquinone-energy อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_050",
+    "brand_id": "br_017",
+    "name": "Doctor's Best High Absorption CoQ10",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "bioperine-enhanced",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "100mg"
+      }
+    ],
+    "serving_package": "softgel-120",
+    "min_price": 950,
+    "max_price": 1290,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Doctor's Best High Absorption CoQ10 ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง bioperine-enhanced อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_051",
+    "brand_id": "br_010",
+    "name": "Kirkland Signature CoQ10 300 mg",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "statin-user-support",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "300mg"
+      }
+    ],
+    "serving_package": "softgel-100",
+    "min_price": 1150,
+    "max_price": 1490,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Kirkland Signature CoQ10 300 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง statin-user-support อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_052",
+    "brand_id": "br_008",
+    "name": "DHC Coenzyme Q10 Direct 30 Days",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "vitality-capsules",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "90mg"
+      }
+    ],
+    "serving_package": "capsule-60",
+    "min_price": 380,
+    "max_price": 520,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน DHC Coenzyme Q10 Direct 30 Days ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง vitality-capsules อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_053",
+    "brand_id": "br_025",
+    "name": "Centrum Multivitamin Adults A-Z",
+    "category_slug": "coq10-multivitamins",
+    "sub_category": "complete-micronutrients",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_004",
+        "volume": "40mg"
+      }
+    ],
+    "serving_package": "tablet-100",
+    "min_price": 590,
+    "max_price": 790,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Centrum Multivitamin Adults A-Z ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง complete-micronutrients อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_coq10_001",
+      "ev_coq10_002"
+    ]
+  },
+  {
+    "id": "p_006",
+    "brand_id": "br_006",
+    "name": "Move Free Ultra Triple Action UC-II",
+    "category_slug": "joint-protection",
+    "sub_category": "active-joint-mobility",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_006",
+        "volume": "40mg"
+      }
+    ],
+    "serving_package": "tablet-75",
+    "min_price": 990,
+    "max_price": 1290,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Move Free Ultra Triple Action UC-II ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง active-joint-mobility อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_054",
+    "brand_id": "br_001",
+    "name": "Blackmores Joint Plus Collagen UC-II",
+    "category_slug": "joint-protection",
+    "sub_category": "cartilage-bone-d3",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_006",
+        "volume": "40mg"
+      }
+    ],
+    "serving_package": "tablet-30",
+    "min_price": 890,
+    "max_price": 1150,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Blackmores Joint Plus Collagen UC-II ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง cartilage-bone-d3 อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_055",
+    "brand_id": "br_003",
+    "name": "NOW Foods UC-II Joint Health 40 mg",
+    "category_slug": "joint-protection",
+    "sub_category": "standardized-chicken-cartilage",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_006",
+        "volume": "40mg"
+      }
+    ],
+    "serving_package": "capsule-60",
+    "min_price": 850,
+    "max_price": 1100,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods UC-II Joint Health 40 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง standardized-chicken-cartilage อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_056",
+    "brand_id": "br_002",
+    "name": "Vistra Calplex Calcium 600 mg Plus D3 K2",
+    "category_slug": "joint-protection",
+    "sub_category": "calcium-d3-k2",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_006",
+        "volume": "600mg"
+      }
+    ],
+    "serving_package": "tablet-90",
+    "min_price": 320,
+    "max_price": 450,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra Calplex Calcium 600 mg Plus D3 K2 ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง calcium-d3-k2 อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_057",
+    "brand_id": "br_004",
+    "name": "Mega We Care Jointsical Glucosamine Complex",
+    "category_slug": "joint-protection",
+    "sub_category": "glucosamine-chondroitin",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_011",
+        "volume": "1500mg"
+      }
+    ],
+    "serving_package": "sachet-30",
+    "min_price": 650,
+    "max_price": 890,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Mega We Care Jointsical Glucosamine Complex ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง glucosamine-chondroitin อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_058",
+    "brand_id": "br_017",
+    "name": "Doctor's Best Glucosamine Chondroitin MSM",
+    "category_slug": "joint-protection",
+    "sub_category": "optimsm-joint-matrix",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_011",
+        "volume": "1500mg"
+      }
+    ],
+    "serving_package": "capsule-240",
+    "min_price": 1250,
+    "max_price": 1650,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Doctor's Best Glucosamine Chondroitin MSM ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง optimsm-joint-matrix อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_059",
+    "brand_id": "br_001",
+    "name": "Blackmores Glucosamine 1500 mg",
+    "category_slug": "joint-protection",
+    "sub_category": "single-daily-dose",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_011",
+        "volume": "1500mg"
+      }
+    ],
+    "serving_package": "tablet-180",
+    "min_price": 1090,
+    "max_price": 1450,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Blackmores Glucosamine 1500 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง single-daily-dose อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_060",
+    "brand_id": "br_026",
+    "name": "InterCare Joint Care UC-II Plus Turmeric",
+    "category_slug": "joint-protection",
+    "sub_category": "uc2-turmeric-antiinflammatory",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_006",
+        "volume": "40mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 590,
+    "max_price": 790,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน InterCare Joint Care UC-II Plus Turmeric ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง uc2-turmeric-antiinflammatory อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_061",
+    "brand_id": "br_019",
+    "name": "Life Extension NT2 Collagen UC-II",
+    "category_slug": "joint-protection",
+    "sub_category": "undenaured-type2",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_006",
+        "volume": "40mg"
+      }
+    ],
+    "serving_package": "capsule-60",
+    "min_price": 990,
+    "max_price": 1290,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Life Extension NT2 Collagen UC-II ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง undenaured-type2 อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_062",
+    "brand_id": "br_005",
+    "name": "Swisse Ultiboost Joint Repair Glucosamine",
+    "category_slug": "joint-protection",
+    "sub_category": "glucosamine-msm-relief",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_011",
+        "volume": "1500mg"
+      }
+    ],
+    "serving_package": "tablet-90",
+    "min_price": 890,
+    "max_price": 1190,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Swisse Ultiboost Joint Repair Glucosamine ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง glucosamine-msm-relief อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_uc2_001",
+      "ev_uc2_002"
+    ]
+  },
+  {
+    "id": "p_007",
+    "brand_id": "br_002",
+    "name": "Vistra L-Carnitine 500 mg Plus 3L",
+    "category_slug": "energy-metabolism",
+    "sub_category": "fat-burn-cardio",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "tablet-30",
+    "min_price": 290,
+    "max_price": 420,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Vistra L-Carnitine 500 mg Plus 3L ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง fat-burn-cardio อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_063",
+    "brand_id": "br_027",
+    "name": "Yanhee Ultimate L-Carnitine",
+    "category_slug": "energy-metabolism",
+    "sub_category": "medical-grade-burn",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 390,
+    "max_price": 550,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Yanhee Ultimate L-Carnitine ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง medical-grade-burn อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_064",
+    "brand_id": "br_004",
+    "name": "Mega We Care Hi-GREEN EGCG Concentrated",
+    "category_slug": "energy-metabolism",
+    "sub_category": "green-tea-egcg-burn",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_012",
+        "volume": "375mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 320,
+    "max_price": 450,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Mega We Care Hi-GREEN EGCG Concentrated ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง green-tea-egcg-burn อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_065",
+    "brand_id": "br_003",
+    "name": "NOW Foods L-Carnitine 1000 mg Carnipure®",
+    "category_slug": "energy-metabolism",
+    "sub_category": "carnipure-pure-tartrate",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "1000mg"
+      }
+    ],
+    "serving_package": "tablet-100",
+    "min_price": 890,
+    "max_price": 1190,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods L-Carnitine 1000 mg Carnipure® ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง carnipure-pure-tartrate อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_066",
+    "brand_id": "br_026",
+    "name": "InterCare L-Carnitine 500+ Arginine",
+    "category_slug": "energy-metabolism",
+    "sub_category": "lcarnitine-arginine",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 350,
+    "max_price": 480,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน InterCare L-Carnitine 500+ Arginine ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง lcarnitine-arginine อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_067",
+    "brand_id": "br_028",
+    "name": "Nutrex Research Liquid L-Carnitine 3000",
+    "category_slug": "energy-metabolism",
+    "sub_category": "fast-liquid-shot",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "3000mg"
+      }
+    ],
+    "serving_package": "liquid-473ml",
+    "min_price": 990,
+    "max_price": 1290,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Nutrex Research Liquid L-Carnitine 3000 ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง fast-liquid-shot อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_068",
+    "brand_id": "br_008",
+    "name": "DHC L-Carnitine 300 mg 30 Days",
+    "category_slug": "energy-metabolism",
+    "sub_category": "japanese-weight-care",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "300mg"
+      }
+    ],
+    "serving_package": "tablet-150",
+    "min_price": 450,
+    "max_price": 620,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน DHC L-Carnitine 300 mg 30 Days ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง japanese-weight-care อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_069",
+    "brand_id": "br_029",
+    "name": "Watsons L-Carnitine 500 mg",
+    "category_slug": "energy-metabolism",
+    "sub_category": "daily-fitness-burn",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "500mg"
+      }
+    ],
+    "serving_package": "capsule-30",
+    "min_price": 250,
+    "max_price": 350,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Watsons L-Carnitine 500 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง daily-fitness-burn อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_070",
+    "brand_id": "br_020",
+    "name": "Nature's Bounty Green Tea Extract 315 mg",
+    "category_slug": "energy-metabolism",
+    "sub_category": "standardized-egcg",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_012",
+        "volume": "315mg"
+      }
+    ],
+    "serving_package": "capsule-100",
+    "min_price": 490,
+    "max_price": 680,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Nature's Bounty Green Tea Extract 315 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง standardized-egcg อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_071",
+    "brand_id": "br_030",
+    "name": "Gold Nutrition L-Carnitine 3000 Liquid",
+    "category_slug": "energy-metabolism",
+    "sub_category": "preworkout-ampoule",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_007",
+        "volume": "3000mg"
+      }
+    ],
+    "serving_package": "ampoule-20",
+    "min_price": 1150,
+    "max_price": 1490,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Gold Nutrition L-Carnitine 3000 Liquid ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง preworkout-ampoule อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_lcarnitine_001",
+      "ev_lcarnitine_002"
+    ]
+  },
+  {
+    "id": "p_008",
+    "brand_id": "br_007",
+    "name": "SaltStick Electrolyte Fastchews",
+    "category_slug": "recovery-hydration",
+    "sub_category": "cramp-prevention",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "100mg"
+      }
+    ],
+    "serving_package": "chewable-60",
+    "min_price": 550,
+    "max_price": 750,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน SaltStick Electrolyte Fastchews ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง cramp-prevention อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_072",
+    "brand_id": "br_031",
+    "name": "Pocari Sweat Ion Supply Powder Drink",
+    "category_slug": "recovery-hydration",
+    "sub_category": "balanced-ion-powder",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "13g"
+      }
+    ],
+    "serving_package": "sachet-5",
+    "min_price": 110,
+    "max_price": 150,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Pocari Sweat Ion Supply Powder Drink ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง balanced-ion-powder อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_073",
+    "brand_id": "br_032",
+    "name": "Active Peak Energy Gel + Electrolytes",
+    "category_slug": "recovery-hydration",
+    "sub_category": "gel-bcaa-1400mg",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "40g"
+      }
+    ],
+    "serving_package": "sachet-1",
+    "min_price": 65,
+    "max_price": 85,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Active Peak Energy Gel + Electrolytes ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง gel-bcaa-1400mg อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_074",
+    "brand_id": "br_033",
+    "name": "Dever Energy Gel & Electrolyte Drink",
+    "category_slug": "recovery-hydration",
+    "sub_category": "cardio-marathon-fuel",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "40ml"
+      }
+    ],
+    "serving_package": "sachet-1",
+    "min_price": 45,
+    "max_price": 60,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Dever Energy Gel & Electrolyte Drink ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง cardio-marathon-fuel อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_075",
+    "brand_id": "br_034",
+    "name": "AMMO Natural Energy Gel",
+    "category_slug": "recovery-hydration",
+    "sub_category": "natural-fruit-fuel",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "45g"
+      }
+    ],
+    "serving_package": "sachet-1",
+    "min_price": 75,
+    "max_price": 95,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน AMMO Natural Energy Gel ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง natural-fruit-fuel อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_076",
+    "brand_id": "br_035",
+    "name": "Royal-D Energy Gel & Electrolyte Beverage",
+    "category_slug": "recovery-hydration",
+    "sub_category": "osmolality-hydrator",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "25g"
+      }
+    ],
+    "serving_package": "sachet-10",
+    "min_price": 85,
+    "max_price": 120,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Royal-D Energy Gel & Electrolyte Beverage ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง osmolality-hydrator อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_077",
+    "brand_id": "br_036",
+    "name": "GU Energy Gel + Amino Acids Tri-Berry",
+    "category_slug": "recovery-hydration",
+    "sub_category": "triberry-endurance",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "32g"
+      }
+    ],
+    "serving_package": "sachet-1",
+    "min_price": 85,
+    "max_price": 110,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน GU Energy Gel + Amino Acids Tri-Berry ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง triberry-endurance อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_078",
+    "brand_id": "br_004",
+    "name": "Ultrapro Whey Protein Isolate Mega We Care",
+    "category_slug": "recovery-hydration",
+    "sub_category": "muscle-recovery-whey",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "25g-protein"
+      }
+    ],
+    "serving_package": "can-750g",
+    "min_price": 1290,
+    "max_price": 1690,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Ultrapro Whey Protein Isolate Mega We Care ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง muscle-recovery-whey อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_079",
+    "brand_id": "br_037",
+    "name": "Plantae Complete Plant Protein",
+    "category_slug": "recovery-hydration",
+    "sub_category": "5-plant-vegan-protein",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_008",
+        "volume": "30g-protein"
+      }
+    ],
+    "serving_package": "can-800g",
+    "min_price": 1490,
+    "max_price": 1890,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน Plantae Complete Plant Protein ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง 5-plant-vegan-protein อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  },
+  {
+    "id": "p_080",
+    "brand_id": "br_003",
+    "name": "NOW Foods Magnesium Citrate 200 mg",
+    "category_slug": "recovery-hydration",
+    "sub_category": "postworkout-cramp-relief",
+    "ingredient_list": [
+      {
+        "igd_id": "igd_003",
+        "volume": "200mg"
+      }
+    ],
+    "serving_package": "tablet-100",
+    "min_price": 490,
+    "max_price": 680,
+    "safety_profile": {
+      "warnings": [
+        "ควรรับประทาน NOW Foods Magnesium Citrate 200 mg ตามขนาดที่แนะนำบนฉลาก",
+        "เด็ก สตรีมีครรภ์ และผู้มีโรคประจำตัวร้ายแรงควรปรึกษาแพทย์ก่อนทาน"
+      ],
+      "contraindications": [
+        "ผู้ที่มีประวัติแพ้ส่วนผสมในผลิตภัณฑ์นี้ควรหลีกเลี่ยง",
+        "ห้ามใช้ทดแทนการรักษาโรคหรือการรับประทานอาหารหลักให้ครบ 5 หมู่"
+      ],
+      "optimal_intake": "รับประทานพร้อมหรือหลังอาหาร เพื่อการดูดซึมที่ดีที่สุด",
+      "pros": [
+        "สูตรเฉพาะบำรุง postworkout-cramp-relief อย่างมีประสิทธิภาพ",
+        "ส่วนประกอบผ่านการทดสอบมาตรฐานความปลอดภัยระดับสากล"
+      ],
+      "considerations": [
+        "ควรเก็บในที่แห้ง พ้นจากแสงแดดและความร้อน"
+      ]
+    },
+    "evidence_ids": [
+      "ev_electrolytes_001",
+      "ev_electrolytes_002"
+    ]
+  }
+]
