@@ -25,6 +25,8 @@ export interface IProduct {
   max_price?: number | null;
   safety_profile?: ISafetyProfile;
   evidence_ids: string[];
+  health_goals?: string[];
+  health_issues?: string[];
 }
 
 export interface IProductDocument extends IProduct, Document {}
@@ -57,7 +59,9 @@ const ProductSchema = new Schema<IProductDocument>(
     min_price: { type: Number, required: true },
     max_price: { type: Number, default: null },
     safety_profile: { type: SafetyProfileSchema },
-    evidence_ids: [{ type: String, ref: 'Evidence' }]
+    evidence_ids: [{ type: String, ref: 'Evidence' }],
+    health_goals: [{ type: String }],
+    health_issues: [{ type: String }]
   },
   { timestamps: true }
 );

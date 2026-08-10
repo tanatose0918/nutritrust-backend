@@ -37,7 +37,9 @@ export default async function productRoutes(fastify: FastifyInstance) {
           const goalRegex = new RegExp(health_goal.trim(), 'i');
           query.$or = [
             { category_slug: goalRegex },
-            { sub_category: goalRegex }
+            { sub_category: goalRegex },
+            { health_goals: goalRegex },
+            { health_issues: goalRegex }
           ];
         }
 
@@ -46,7 +48,9 @@ export default async function productRoutes(fastify: FastifyInstance) {
           const searchConditions = [
             { name: regex },
             { category_slug: regex },
-            { sub_category: regex }
+            { sub_category: regex },
+            { health_goals: regex },
+            { health_issues: regex }
           ];
 
           if (query.$or) {
