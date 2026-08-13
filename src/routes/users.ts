@@ -6,6 +6,8 @@ interface UserRequestBody {
   email: string;
   password?: string;
   role?: 'member' | 'early_adopter' | 'admin';
+  subject_type?: string | null;
+  intake_routine?: string | null;
   health_goals?: string[];
   health_issues?: string | null;
   current_supplements?: string | null;
@@ -20,15 +22,17 @@ interface UserRequestBody {
 }
 
 export default async function userRoutes(fastify: FastifyInstance) {
-  // POST /api/users - Create or update user profile & survey answers
+  // POST / - Create or update user profile & survey answers
   fastify.post(
-    '/api/users',
+    '/',
     async (request: FastifyRequest<{ Body: UserRequestBody }>, reply: FastifyReply) => {
       try {
         const {
           username,
           email,
           role,
+          subject_type,
+          intake_routine,
           health_goals,
           health_issues,
           current_supplements,
@@ -52,6 +56,8 @@ export default async function userRoutes(fastify: FastifyInstance) {
         };
 
         if (username !== undefined) updateData.username = username ? username.trim() : null;
+        if (subject_type !== undefined) updateData.subject_type = subject_type;
+        if (intake_routine !== undefined) updateData.intake_routine = intake_routine;
         if (health_goals !== undefined) updateData.health_goals = health_goals;
         if (health_issues !== undefined) updateData.health_issues = health_issues;
         if (current_supplements !== undefined) updateData.current_supplements = current_supplements;
@@ -84,8 +90,8 @@ export default async function userRoutes(fastify: FastifyInstance) {
     }
   );
 
-  // GET /api/users - List users
-  fastify.get('/api/users', async (request: FastifyRequest, reply: FastifyReply) => {
+  // GET / - List users
+  fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
     try {
       const users = await UserModel.find().sort({ createdAt: -1 }).limit(100).lean();
       return reply.code(200).send({
@@ -102,9 +108,74 @@ export default async function userRoutes(fastify: FastifyInstance) {
     }
   });
 
-  // GET /api/users/:email - Get single user profile by email
+  // GET /id/:id - Fetch user profile by MongoDB _id
   fastify.get(
-    '/api/users/:email',
+    '/id/:id',
+    async (request: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) => {
+      try {
+        const { id } = request.params;
+        const user = await UserModel.findById(id).lean();
+
+        if (!user) {
+          return reply.code(404).send({
+            success: false,
+            message: `User with ID '${id}' not found`
+          });
+        }
+
+        return reply.code(200).send({
+          success: true,
+          data: user
+        });
+      } catch (error: any) {
+        fastify.log.error(error);
+        return reply.code(500).send({
+          success: false,
+          message: error.message || 'Failed to fetch user by ID'
+        });
+      }
+    }
+  );
+
+  // PUT /id/:id - Update user profile by MongoDB _id
+  fastify.put(
+    '/id/:id',
+    async (request: FastifyRequest<{ Params: { id: string }; Body: Partial<UserRequestBody> }>, reply: FastifyReply) => {
+      try {
+        const { id } = request.params;
+        const updatePayload = request.body || {};
+
+        const user = await UserModel.findByIdAndUpdate(
+          id,
+          { $set: updatePayload },
+          { new: true, runValidators: true }
+        ).lean();
+
+        if (!user) {
+          return reply.code(404).send({
+            success: false,
+            message: `User with ID '${id}' not found`
+          });
+        }
+
+        return reply.code(200).send({
+          success: true,
+          message: 'User profile updated successfully!',
+          data: user
+        });
+      } catch (error: any) {
+        fastify.log.error(error);
+        return reply.code(500).send({
+          success: false,
+          message: error.message || 'Failed to update user profile'
+        });
+      }
+    }
+  );
+
+  // GET /:email - Get single user profile by email
+  fastify.get(
+    '/:email',
     async (request: FastifyRequest<{ Params: { email: string } }>, reply: FastifyReply) => {
       try {
         const { email } = request.params;
@@ -132,3 +203,4 @@ export default async function userRoutes(fastify: FastifyInstance) {
     }
   );
 }
+

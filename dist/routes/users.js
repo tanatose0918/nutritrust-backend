@@ -6,7 +6,7 @@ async function userRoutes(fastify) {
     // POST /api/users - Create or update user profile & survey answers
     fastify.post('/api/users', async (request, reply) => {
         try {
-            const { username, email, role, health_goals, health_issues, current_supplements, ratings, feedback, is_newsletter_subscriber } = request.body || {};
+            const { username, email, role, subject_type, intake_routine, health_goals, health_issues, current_supplements, ratings, feedback, is_newsletter_subscriber } = request.body || {};
             if (!email || !email.trim()) {
                 return reply.code(400).send({
                     success: false,
@@ -20,6 +20,10 @@ async function userRoutes(fastify) {
             };
             if (username !== undefined)
                 updateData.username = username ? username.trim() : null;
+            if (subject_type !== undefined)
+                updateData.subject_type = subject_type;
+            if (intake_routine !== undefined)
+                updateData.intake_routine = intake_routine;
             if (health_goals !== undefined)
                 updateData.health_goals = health_goals;
             if (health_issues !== undefined)
@@ -65,6 +69,56 @@ async function userRoutes(fastify) {
             return reply.code(500).send({
                 success: false,
                 message: error.message || 'Failed to fetch users'
+            });
+        }
+    });
+    // GET /api/users/id/:id - Fetch user profile by MongoDB _id
+    fastify.get('/api/users/id/:id', async (request, reply) => {
+        try {
+            const { id } = request.params;
+            const user = await User_1.UserModel.findById(id).lean();
+            if (!user) {
+                return reply.code(404).send({
+                    success: false,
+                    message: `User with ID '${id}' not found`
+                });
+            }
+            return reply.code(200).send({
+                success: true,
+                data: user
+            });
+        }
+        catch (error) {
+            fastify.log.error(error);
+            return reply.code(500).send({
+                success: false,
+                message: error.message || 'Failed to fetch user by ID'
+            });
+        }
+    });
+    // PUT /api/users/id/:id - Update user profile by MongoDB _id
+    fastify.put('/api/users/id/:id', async (request, reply) => {
+        try {
+            const { id } = request.params;
+            const updatePayload = request.body || {};
+            const user = await User_1.UserModel.findByIdAndUpdate(id, { $set: updatePayload }, { new: true, runValidators: true }).lean();
+            if (!user) {
+                return reply.code(404).send({
+                    success: false,
+                    message: `User with ID '${id}' not found`
+                });
+            }
+            return reply.code(200).send({
+                success: true,
+                message: 'User profile updated successfully!',
+                data: user
+            });
+        }
+        catch (error) {
+            fastify.log.error(error);
+            return reply.code(500).send({
+                success: false,
+                message: error.message || 'Failed to update user profile'
             });
         }
     });

@@ -25,6 +25,8 @@ const ProductSchema = new mongoose_1.Schema({
     min_price: { type: Number, required: true },
     max_price: { type: Number, default: null },
     safety_profile: { type: SafetyProfileSchema },
-    evidence_ids: [{ type: String, ref: 'Evidence' }]
+    evidence_ids: [{ type: String, ref: 'Evidence' }],
+    health_goals: [{ type: String }],
+    health_issues: [{ type: String }]
 }, { timestamps: true });
 exports.ProductModel = (0, mongoose_1.model)('Product', ProductSchema);

@@ -1,7 +1,8 @@
 import Fastify from 'fastify';
-import dotenv from 'dotenv';
 import cors from '@fastify/cors';
+import dotenv from 'dotenv';
 import dbPlugin from './plugins/db';
+
 import brandRoutes from './routes/brands';
 import ingredientRoutes from './routes/ingredients';
 import providerRoutes from './routes/providers';
@@ -14,115 +15,57 @@ import userRoutes from './routes/users';
 import webAnalyticsRoutes from './routes/webAnalytics';
 import tokenizerRoutes from './routes/tokenizer';
 import aiAdviceRoutes from './routes/aiAdvice';
-import { batchCacheWorker } from './services/cacheWorker';
-import { BrandModel } from './models/Brand';
-import { IngredientModel } from './models/Ingredient';
-import { ProviderModel } from './models/Provider';
-import { ProductModel } from './models/Product';
-import { EvidenceModel } from './models/Evidence';
-import { ProductAnalyticsModel } from './models/ProductAnalytics';
-import { WaitlistModel } from './models/Waitlist';
-import { SurveyModel } from './models/Survey';
-import { UserModel } from './models/User';
-import { WebAnalyticsModel } from './models/WebAnalytics';
+import mcpRoutes from './routes/mcpRoutes';
+import authRoutes from './routes/auth';
 
 dotenv.config();
 
-const server = Fastify({
-  logger: true
+const fastify = Fastify({
+  logger: true,
 });
 
-const PORT = Number(process.env.PORT) || 5000;
-const HOST = process.env.HOST || '0.0.0.0';
-
-async function start() {
+const startServer = async () => {
   try {
-    // Register CORS
-    await server.register(cors, {
-      origin: '*'
+    // Register CORS to allow requests from Next.js frontend (localhost:3000)
+    await fastify.register(cors, {
+      origin: true,
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      credentials: true,
     });
 
-    // Register MongoDB Connection Plugin
-    await server.register(dbPlugin);
+    // Register MongoDB Database Plugin
+    await fastify.register(dbPlugin);
 
     // Health check endpoint
-    server.get('/health', async () => {
-      return {
-        status: 'ok',
-        service: 'nutritrust-backend',
-        database: 'Web_application_base',
-        timestamp: new Date().toISOString()
-      };
+    fastify.get('/health', async () => {
+      return { status: 'ok', service: 'NutriTrust Fastify Backend', timestamp: new Date().toISOString() };
     });
 
-    // Overview endpoint for all collections
-    server.get('/api/collections', async () => {
-      const [
-        brandsCount,
-        ingredientsCount,
-        providersCount,
-        productsCount,
-        scienceSummariesCount,
-        analyticsCount,
-        waitlistCount,
-        surveysCount,
-        usersCount,
-        webAnalyticsCount
-      ] = await Promise.all([
-        BrandModel.countDocuments(),
-        IngredientModel.countDocuments(),
-        ProviderModel.countDocuments(),
-        ProductModel.countDocuments(),
-        EvidenceModel.countDocuments(),
-        ProductAnalyticsModel.countDocuments(),
-        WaitlistModel.countDocuments(),
-        SurveyModel.countDocuments(),
-        UserModel.countDocuments(),
-        WebAnalyticsModel.countDocuments()
-      ]);
+    // Register API Route Modules
+    await fastify.register(authRoutes, { prefix: '/api/auth' });
+    await fastify.register(brandRoutes, { prefix: '/api/brands' });
+    await fastify.register(ingredientRoutes, { prefix: '/api/ingredients' });
+    await fastify.register(providerRoutes, { prefix: '/api/providers' });
+    await fastify.register(productRoutes, { prefix: '/api/products' });
+    await fastify.register(scienceSummaryRoutes, { prefix: '/api/science-summaries' });
+    await fastify.register(searchRoutes, { prefix: '/api/search' });
+    await fastify.register(compareRoutes, { prefix: '/api/compare' });
+    await fastify.register(waitlistRoutes, { prefix: '/api/waitlist' });
+    await fastify.register(userRoutes, { prefix: '/api/users' });
+    await fastify.register(webAnalyticsRoutes, { prefix: '/api/web-analytics' });
+    await fastify.register(tokenizerRoutes, { prefix: '/api/tokenizer' });
+    await fastify.register(aiAdviceRoutes);
+    await fastify.register(mcpRoutes, { prefix: '/api/mcp' });
 
-      return {
-        success: true,
-        database: 'Web_application_base',
-        collections: {
-          brands: { count: brandsCount, endpoint: '/api/brands' },
-          ingredients: { count: ingredientsCount, endpoint: '/api/ingredients' },
-          providers: { count: providersCount, endpoint: '/api/providers' },
-          products: { count: productsCount, endpoint: '/api/products' },
-          science_summaries: { count: scienceSummariesCount, endpoint: '/api/science-summaries' },
-          products_analytics: { count: analyticsCount, endpoint: '/api/analytics/:productId' },
-          waitlists: { count: waitlistCount, endpoint: '/api/waitlist/count' },
-          surveys: { count: surveysCount, endpoint: '/api/surveys' },
-          users: { count: usersCount, endpoint: '/api/users' },
-          web_analytics: { count: webAnalyticsCount, endpoint: '/api/web-analytics' }
-        }
-      };
-    });
+    const port = Number(process.env.PORT) || 5000;
+    const host = process.env.HOST || '0.0.0.0';
 
-    // Register Collection & Utility Routes
-    await server.register(brandRoutes);
-    await server.register(ingredientRoutes);
-    await server.register(providerRoutes);
-    await server.register(productRoutes);
-    await server.register(scienceSummaryRoutes);
-    await server.register(searchRoutes);
-    await server.register(compareRoutes);
-    await server.register(waitlistRoutes);
-    await server.register(userRoutes);
-    await server.register(webAnalyticsRoutes);
-    await server.register(tokenizerRoutes);
-    await server.register(aiAdviceRoutes);
-
-    await server.listen({ port: PORT, host: HOST });
-    console.log(`\n🚀 NutriTrust Fastify Backend running on http://localhost:${PORT}\n`);
-
-    // Pre-warm product cache for sub-10ms response time
-    batchCacheWorker.precomputeProductPayloads().catch((e) => console.error(e));
+    await fastify.listen({ port, host });
+    console.log(`🚀 NutriTrust Fastify Server running at http://${host}:${port}`);
   } catch (err) {
-    server.log.error(err);
+    fastify.log.error(err);
     process.exit(1);
   }
-}
+};
 
-start();
-
+startServer();

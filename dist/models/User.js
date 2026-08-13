@@ -11,12 +11,15 @@ const UserRatingsSchema = new mongoose_1.Schema({
 const UserSchema = new mongoose_1.Schema({
     username: { type: String, unique: true, sparse: true, trim: true, default: null },
     email: { type: String, required: true, unique: true, trim: true, lowercase: true },
+    password: { type: String, default: null },
     password_hash: { type: String, default: null },
     role: {
         type: String,
         enum: ['member', 'early_adopter', 'admin'],
         default: 'early_adopter'
     },
+    subject_type: { type: String, default: 'general_user' },
+    intake_routine: { type: String, default: 'morning' },
     health_goals: [{ type: String }],
     health_issues: { type: String, default: null },
     current_supplements: { type: String, default: null },

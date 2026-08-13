@@ -11,8 +11,11 @@ export interface IUser {
   id?: string;
   username?: string | null;
   email: string;
+  password?: string | null;
   password_hash?: string | null;
   role?: 'member' | 'early_adopter' | 'admin';
+  subject_type?: string | null;
+  intake_routine?: string | null;
   health_goals?: string[];
   health_issues?: string | null;
   current_supplements?: string | null;
@@ -39,12 +42,16 @@ const UserSchema = new Schema<IUserDocument>(
   {
     username: { type: String, unique: true, sparse: true, trim: true, default: null },
     email: { type: String, required: true, unique: true, trim: true, lowercase: true },
+    password: { type: String, default: null },
     password_hash: { type: String, default: null },
+
     role: {
       type: String,
       enum: ['member', 'early_adopter', 'admin'],
       default: 'early_adopter'
     },
+    subject_type: { type: String, default: 'general_user' },
+    intake_routine: { type: String, default: 'morning' },
     health_goals: [{ type: String }],
     health_issues: { type: String, default: null },
     current_supplements: { type: String, default: null },
@@ -56,3 +63,4 @@ const UserSchema = new Schema<IUserDocument>(
 );
 
 export const UserModel = model<IUserDocument>('User', UserSchema);
+
