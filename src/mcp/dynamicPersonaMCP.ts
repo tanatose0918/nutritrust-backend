@@ -2,6 +2,24 @@ import { ProductModel } from '../models/Product';
 import { privacyTokenizerMCP, IPrivacyTokenizerMCPResult } from './privacyTokenizerMCP';
 import { stackSafetyMCP, IStackSafetyResult } from './stackSafetyMCP';
 
+// ---------------------------------------------------------------------------
+// Ingredient Alias Mapping (same as in stackSafetyMCP) for consistent look‑ups.
+// ---------------------------------------------------------------------------
+const INGREDIENT_ALIAS: Record<string, string> = {
+  igd_001: 'igd_vit_c',
+  igd_002: 'igd_fish_oil',
+  igd_003: 'igd_magnesium',
+  igd_004: 'igd_coq10',
+  igd_005: 'igd_vit_c',
+  igd_006: 'igd_uc2',
+  igd_007: 'igd_lcarnitine',
+  igd_008: 'igd_electrolytes',
+  igd_009: 'igd_astaxanthin',
+  igd_010: 'igd_collagen',
+  igd_011: 'igd_glucosamine',
+  igd_012: 'igd_egcg'
+};
+
 export interface IPersonaMatchScore {
   persona_id: string;
   persona_name_th: string;
@@ -27,6 +45,8 @@ export class DynamicPersonaMCP {
     email?: string;
     raw_prompt?: string;
     product_ids: string[];
+    health_issues?: string[];
+    health_goals?: string[];
   }): Promise<{
     privacy_context: IPrivacyTokenizerMCPResult;
     stack_safety: IStackSafetyResult;
@@ -35,20 +55,31 @@ export class DynamicPersonaMCP {
     // 1. Process Privacy & SIR Matrix via MCP 1
     const privacy = privacyTokenizerMCP.processUserInput(params.email, params.raw_prompt);
 
-    // 2. Evaluate Stack Safety via MCP 2
-    const safety = await stackSafetyMCP.analyzeStackSafety(params.product_ids);
+    // 2. Evaluate Stack Safety via MCP 2 (Passing health issues and goals)
+    const safety = await stackSafetyMCP.analyzeStackSafety(params.product_ids, params.health_issues, params.health_goals);
 
     // 3. Fetch products data
     const products = await ProductModel.find({ id: { $in: params.product_ids } }).lean();
-    const allIngredients = new Set(products.flatMap((p) => (p.ingredient_list || []).map((i) => i.igd_id)));
+    const rawIngredientIds = products.flatMap((p) => (p.ingredient_list || []).map((i) => i.igd_id));
+    const allIngredients = new Set(rawIngredientIds.map(id => INGREDIENT_ALIAS[id] || id));
 
     // 4. Compute 6 Persona Dimension Overlays
-    const jointScore = (allIngredients.has('igd_uc2') || allIngredients.has('igd_collagen') ? 40 : 10) + (allIngredients.has('igd_vit_d3') ? 30 : 0) + 20;
-    const cardioScore = (allIngredients.has('igd_fish_oil') || allIngredients.has('igd_omega3') ? 45 : 15) + (allIngredients.has('igd_lcarnitine') ? 35 : 0) + 15;
-    const sleepScore = (allIngredients.has('igd_magnesium') ? 50 : 20) + (allIngredients.has('igd_theanine') ? 30 : 0) + 15;
-    const immunityScore = (allIngredients.has('igd_vit_c') ? 45 : 15) + (allIngredients.has('igd_zinc') ? 35 : 0) + 15;
-    const recoveryScore = (allIngredients.has('igd_electrolytes') ? 45 : 15) + (allIngredients.has('igd_bcaa') ? 35 : 0) + 15;
-    const skinScore = (allIngredients.has('igd_collagen') ? 45 : 15) + (allIngredients.has('igd_astaxanthin') ? 35 : 0) + 15;
+    let jointScore = (allIngredients.has('igd_uc2') || allIngredients.has('igd_collagen') ? 40 : 10) + (allIngredients.has('igd_vit_d3') ? 30 : 0) + 20;
+    let cardioScore = (allIngredients.has('igd_fish_oil') ? 45 : 15) + (allIngredients.has('igd_lcarnitine') ? 35 : 0) + 15;
+    let sleepScore = (allIngredients.has('igd_magnesium') ? 50 : 20) + (allIngredients.has('igd_theanine') ? 30 : 0) + 15;
+    let immunityScore = (allIngredients.has('igd_vit_c') ? 45 : 15) + (allIngredients.has('igd_zinc') ? 35 : 0) + 15;
+    let recoveryScore = (allIngredients.has('igd_electrolytes') ? 45 : 15) + (allIngredients.has('igd_bcaa') ? 35 : 0) + 15;
+    let skinScore = (allIngredients.has('igd_collagen') ? 45 : 15) + (allIngredients.has('igd_astaxanthin') ? 35 : 0) + 15;
+
+    // Apply Health Goals Biasing
+    const healthGoals = params.health_goals || [];
+
+    if (healthGoals.includes('joint') || healthGoals.includes('bone')) jointScore += 15;
+    if (healthGoals.includes('heart') || healthGoals.includes('cholesterol')) cardioScore += 15;
+    if (healthGoals.includes('sleep') || healthGoals.includes('stress') || healthGoals.includes('relax')) sleepScore += 15;
+    if (healthGoals.includes('immune') || healthGoals.includes('allergy')) immunityScore += 15;
+    if (healthGoals.includes('energy') || healthGoals.includes('muscle') || healthGoals.includes('recovery')) recoveryScore += 15;
+    if (healthGoals.includes('skin') || healthGoals.includes('beauty') || healthGoals.includes('antiaging')) skinScore += 15;
 
     const baseDimensions = {
       joint_bone: Math.min(100, jointScore),

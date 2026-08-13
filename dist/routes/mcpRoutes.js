@@ -8,7 +8,7 @@ const evidenceKBMCP_1 = require("../mcp/evidenceKBMCP");
 const merchantPriceMCP_1 = require("../mcp/merchantPriceMCP");
 async function mcpRoutes(fastify) {
     // MCP 1: Privacy Scrubbing & SIR 7+1 Tokenization
-    fastify.post('/api/mcp/privacy-tokenize', async (req, reply) => {
+    fastify.post('/privacy-tokenize', async (req, reply) => {
         try {
             const { email, prompt, consent_secret } = req.body || {};
             const result = privacyTokenizerMCP_1.privacyTokenizerMCP.processUserInput(email, prompt, consent_secret);
@@ -19,10 +19,10 @@ async function mcpRoutes(fastify) {
         }
     });
     // MCP 2: Stack Safety & Upper Limit (UL) Guard
-    fastify.post('/api/mcp/stack-safety', async (req, reply) => {
+    fastify.post('/stack-safety', async (req, reply) => {
         try {
-            const { product_ids } = req.body || {};
-            const result = await stackSafetyMCP_1.stackSafetyMCP.analyzeStackSafety(product_ids || []);
+            const { product_ids, health_issues, health_goals } = req.body || {};
+            const result = await stackSafetyMCP_1.stackSafetyMCP.analyzeStackSafety(product_ids || [], health_issues, health_goals);
             return reply.send({ success: true, mcp_service: 'MCP 2: Stack Safety & Interactions', data: result });
         }
         catch (err) {
@@ -30,10 +30,10 @@ async function mcpRoutes(fastify) {
         }
     });
     // MCP 5: Dynamic Persona Matching Engine
-    fastify.post('/api/mcp/dynamic-persona-match', async (req, reply) => {
+    fastify.post('/dynamic-persona-match', async (req, reply) => {
         try {
-            const { email, prompt, product_ids } = req.body || {};
-            const result = await dynamicPersonaMCP_1.dynamicPersonaMCP.computeDynamicMatch({ email, raw_prompt: prompt, product_ids: product_ids || [] });
+            const { email, prompt, product_ids, health_issues, health_goals } = req.body || {};
+            const result = await dynamicPersonaMCP_1.dynamicPersonaMCP.computeDynamicMatch({ email, raw_prompt: prompt, product_ids: product_ids || [], health_issues, health_goals });
             return reply.send({ success: true, mcp_service: 'MCP 5: Dynamic Persona Matching Engine', data: result });
         }
         catch (err) {
@@ -41,7 +41,7 @@ async function mcpRoutes(fastify) {
         }
     });
     // MCP 3: Clinical Evidence KB (Cost of Storage Optimized)
-    fastify.get('/api/mcp/evidence-kb', async (req, reply) => {
+    fastify.get('/evidence-kb', async (req, reply) => {
         try {
             const { ingredient_id, condition } = req.query || {};
             const result = await evidenceKBMCP_1.evidenceKBMCP.queryEvidenceKB(ingredient_id, condition);
@@ -52,7 +52,7 @@ async function mcpRoutes(fastify) {
         }
     });
     // MCP 4: Merchant Official Store Price Indexer
-    fastify.get('/api/mcp/merchant-price', async (req, reply) => {
+    fastify.get('/merchant-price', async (req, reply) => {
         try {
             const { product_id } = req.query || {};
             const result = await merchantPriceMCP_1.merchantPriceMCP.getOfficialStorePrices(product_id);

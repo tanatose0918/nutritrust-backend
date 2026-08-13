@@ -19,10 +19,10 @@ export default async function mcpRoutes(fastify: FastifyInstance) {
   });
 
   // MCP 2: Stack Safety & Upper Limit (UL) Guard
-  fastify.post('/stack-safety', async (req: FastifyRequest<{ Body: { product_ids: string[] } }>, reply: FastifyReply) => {
+  fastify.post('/stack-safety', async (req: FastifyRequest<{ Body: { product_ids: string[]; health_issues?: string[]; health_goals?: string[] } }>, reply: FastifyReply) => {
     try {
-      const { product_ids } = req.body || {};
-      const result = await stackSafetyMCP.analyzeStackSafety(product_ids || []);
+      const { product_ids, health_issues, health_goals } = req.body || {};
+      const result = await stackSafetyMCP.analyzeStackSafety(product_ids || [], health_issues, health_goals);
       return reply.send({ success: true, mcp_service: 'MCP 2: Stack Safety & Interactions', data: result });
     } catch (err: any) {
       return reply.code(500).send({ success: false, message: err.message });
@@ -30,10 +30,10 @@ export default async function mcpRoutes(fastify: FastifyInstance) {
   });
 
   // MCP 5: Dynamic Persona Matching Engine
-  fastify.post('/dynamic-persona-match', async (req: FastifyRequest<{ Body: { email?: string; prompt?: string; product_ids: string[] } }>, reply: FastifyReply) => {
+  fastify.post('/dynamic-persona-match', async (req: FastifyRequest<{ Body: { email?: string; prompt?: string; product_ids: string[]; health_issues?: string[]; health_goals?: string[] } }>, reply: FastifyReply) => {
     try {
-      const { email, prompt, product_ids } = req.body || {};
-      const result = await dynamicPersonaMCP.computeDynamicMatch({ email, raw_prompt: prompt, product_ids: product_ids || [] });
+      const { email, prompt, product_ids, health_issues, health_goals } = req.body || {};
+      const result = await dynamicPersonaMCP.computeDynamicMatch({ email, raw_prompt: prompt, product_ids: product_ids || [], health_issues, health_goals });
       return reply.send({ success: true, mcp_service: 'MCP 5: Dynamic Persona Matching Engine', data: result });
     } catch (err: any) {
       return reply.code(500).send({ success: false, message: err.message });

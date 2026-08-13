@@ -7,8 +7,8 @@ const Waitlist_1 = require("../models/Waitlist");
 const Survey_1 = require("../models/Survey");
 const analyticsBuffer_1 = require("../services/analyticsBuffer");
 async function webAnalyticsRoutes(fastify) {
-    // POST /api/telemetry/event - ยิง Event จาก Frontend เข้า Buffer (ไม่เขียน DB ทันที)
-    fastify.post('/api/telemetry/event', async (req, reply) => {
+    // POST /event - ยิง Event จาก Frontend เข้า Buffer (ไม่เขียน DB ทันที)
+    fastify.post('/event', async (req, reply) => {
         const { event_type, session_id } = req.body || {};
         if (event_type === 'page_view' && session_id) {
             analyticsBuffer_1.analyticsBuffer.trackSession(session_id);
@@ -18,8 +18,8 @@ async function webAnalyticsRoutes(fastify) {
         }
         return reply.status(202).send({ success: true, buffered: true });
     });
-    // GET /api/web-analytics - สำหรับ <VisitorStats /> ดึงข้อมูลแสดงผลสดๆ
-    fastify.get('/api/web-analytics', async (req, reply) => {
+    // GET / - สำหรับ <VisitorStats /> ดึงข้อมูลแสดงผลสดๆ
+    fastify.get('/', async (req, reply) => {
         try {
             const [aggregateResult, usersCount, waitlistsCount, surveysCount, latestDoc] = await Promise.all([
                 WebAnalytics_1.WebAnalyticsModel.aggregate([

@@ -183,6 +183,20 @@ function generateSafetyProfile(p: typeof raw80Products[0]) {
 }
 
 // Map 80 Products into full schema format
+// Helper to map category_slug to health goal IDs
+const CATEGORY_HEALTH_GOALS: Record<string, string[]> = {
+  'vitamin-c': ['immune'],
+  'omega-3-fish-oil': ['heart'],
+  'magnesium': ['bone'],
+  'astaxanthin-collagen': ['skin'],
+  'coq10-multivitamins': ['energy'],
+  'joint-protection': ['joint'],
+  'energy-metabolism': ['energy'],
+  'recovery-hydration': ['recovery'],
+  // default fallback
+  'default': []
+};
+
 const productsMockupData = raw80Products.map((p) => ({
   id: p.id,
   brand_id: p.brand_id,
@@ -198,6 +212,8 @@ const productsMockupData = raw80Products.map((p) => ({
   serving_package: p.pkg,
   min_price: p.min_price,
   max_price: p.max_price,
+  // Assign health goals based on category; fallback to empty array
+  health_goals: CATEGORY_HEALTH_GOALS[p.category_slug] || [],
   safety_profile: generateSafetyProfile(p),
   evidence_ids: [p.ev]
 }));

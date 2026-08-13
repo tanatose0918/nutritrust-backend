@@ -11,18 +11,32 @@ class DynamicPersonaMCP {
     async computeDynamicMatch(params) {
         // 1. Process Privacy & SIR Matrix via MCP 1
         const privacy = privacyTokenizerMCP_1.privacyTokenizerMCP.processUserInput(params.email, params.raw_prompt);
-        // 2. Evaluate Stack Safety via MCP 2
-        const safety = await stackSafetyMCP_1.stackSafetyMCP.analyzeStackSafety(params.product_ids);
+        // 2. Evaluate Stack Safety via MCP 2 (Passing health issues and goals)
+        const safety = await stackSafetyMCP_1.stackSafetyMCP.analyzeStackSafety(params.product_ids, params.health_issues, params.health_goals);
         // 3. Fetch products data
         const products = await Product_1.ProductModel.find({ id: { $in: params.product_ids } }).lean();
         const allIngredients = new Set(products.flatMap((p) => (p.ingredient_list || []).map((i) => i.igd_id)));
         // 4. Compute 6 Persona Dimension Overlays
-        const jointScore = (allIngredients.has('igd_uc2') || allIngredients.has('igd_collagen') ? 40 : 10) + (allIngredients.has('igd_vit_d3') ? 30 : 0) + 20;
-        const cardioScore = (allIngredients.has('igd_fish_oil') || allIngredients.has('igd_omega3') ? 45 : 15) + (allIngredients.has('igd_lcarnitine') ? 35 : 0) + 15;
-        const sleepScore = (allIngredients.has('igd_magnesium') ? 50 : 20) + (allIngredients.has('igd_theanine') ? 30 : 0) + 15;
-        const immunityScore = (allIngredients.has('igd_vit_c') ? 45 : 15) + (allIngredients.has('igd_zinc') ? 35 : 0) + 15;
-        const recoveryScore = (allIngredients.has('igd_electrolytes') ? 45 : 15) + (allIngredients.has('igd_bcaa') ? 35 : 0) + 15;
-        const skinScore = (allIngredients.has('igd_collagen') ? 45 : 15) + (allIngredients.has('igd_astaxanthin') ? 35 : 0) + 15;
+        let jointScore = (allIngredients.has('igd_uc2') || allIngredients.has('igd_collagen') ? 40 : 10) + (allIngredients.has('igd_vit_d3') ? 30 : 0) + 20;
+        let cardioScore = (allIngredients.has('igd_fish_oil') || allIngredients.has('igd_omega3') ? 45 : 15) + (allIngredients.has('igd_lcarnitine') ? 35 : 0) + 15;
+        let sleepScore = (allIngredients.has('igd_magnesium') ? 50 : 20) + (allIngredients.has('igd_theanine') ? 30 : 0) + 15;
+        let immunityScore = (allIngredients.has('igd_vit_c') ? 45 : 15) + (allIngredients.has('igd_zinc') ? 35 : 0) + 15;
+        let recoveryScore = (allIngredients.has('igd_electrolytes') ? 45 : 15) + (allIngredients.has('igd_bcaa') ? 35 : 0) + 15;
+        let skinScore = (allIngredients.has('igd_collagen') ? 45 : 15) + (allIngredients.has('igd_astaxanthin') ? 35 : 0) + 15;
+        // Apply Health Goals Biasing
+        const goalsText = (params.health_goals || []).join(' ').toLowerCase();
+        if (goalsText.includes('ข้อต่อ') || goalsText.includes('กระดูก'))
+            jointScore += 15;
+        if (goalsText.includes('หัวใจ') || goalsText.includes('ไขมัน'))
+            cardioScore += 15;
+        if (goalsText.includes('นอนหลับ') || goalsText.includes('คลายเครียด') || goalsText.includes('ความเครียด'))
+            sleepScore += 15;
+        if (goalsText.includes('ภูมิคุ้มกัน') || goalsText.includes('ภูมิแพ้'))
+            immunityScore += 15;
+        if (goalsText.includes('ออกกำลังกาย') || goalsText.includes('กล้ามเนื้อ') || goalsText.includes('พลังงาน'))
+            recoveryScore += 15;
+        if (goalsText.includes('ผิวพรรณ') || goalsText.includes('ริ้วรอย') || goalsText.includes('ความงาม'))
+            skinScore += 15;
         const baseDimensions = {
             joint_bone: Math.min(100, jointScore),
             cardio_metabolic: Math.min(100, cardioScore),

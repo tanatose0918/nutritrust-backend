@@ -33,8 +33,9 @@ const INTERACTION_RULES = [
 class StackSafetyMCP {
     /**
      * Analyze supplement stack safety, overdose upper limits, conflicts, and synergies
+     * Also incorporates User's Health Issues to generate personalized safety warnings.
      */
-    async analyzeStackSafety(productIds) {
+    async analyzeStackSafety(productIds, healthIssues = [], healthGoals = []) {
         if (!productIds || productIds.length === 0) {
             return {
                 total_products: 0,
@@ -42,7 +43,12 @@ class StackSafetyMCP {
                 warnings: [],
                 conflicts: [],
                 synergies: [],
-                safety_score: 100
+                safety_score: 100,
+                consumption_schedule: {
+                    morning_before_meal: [],
+                    morning_after_meal: [],
+                    bedtime: []
+                }
             };
         }
         const products = await Product_1.ProductModel.find({ id: { $in: productIds } }).lean();
@@ -62,7 +68,29 @@ class StackSafetyMCP {
         }
         const warnings = [];
         let safetyScore = 100;
-        // 2. Evaluate Overdose Upper Limits (UL)
+        // 2. Pre-process Personal Health Issues
+        const issuesText = healthIssues.join(' ').toLowerCase();
+        const hasKidneyIssue = issuesText.includes('โรคไต') || issuesText.includes('kidney');
+        const hasLiverIssue = issuesText.includes('โรคตับ') || issuesText.includes('liver');
+        const hasBloodPressure = issuesText.includes('ความดัน') || issuesText.includes('blood pressure');
+        Object.keys(cumulative).forEach((key) => {
+            // Kidney Issues vs Calcium / High Protein
+            if (hasKidneyIssue && (key === 'igd_calcium' || key === 'igd_whey')) {
+                warnings.push(`[Personal Health Warning]: ท่านมีภาวะโรคไต ควรระวังการทาน ${cumulative[key].name} ปริมาณสูง แนะนำปรึกษาแพทย์เพิ่มเติม`);
+                safetyScore -= 20;
+            }
+            // Liver Issues vs Vitamin A / Iron (High doses can burden liver)
+            if (hasLiverIssue && (key === 'igd_vit_a' || key === 'igd_iron')) {
+                warnings.push(`[Personal Health Warning]: ท่านมีภาวะโรคตับ ควรระวังการสะสมของ ${cumulative[key].name}`);
+                safetyScore -= 15;
+            }
+            // Blood Pressure vs Sodium / Ginseng
+            if (hasBloodPressure && (key === 'igd_ginseng' || key === 'igd_sodium')) {
+                warnings.push(`[Personal Health Warning]: ท่านมีภาวะความดันโลหิต ควรระวัง ${cumulative[key].name} อาจส่งผลต่อความดัน`);
+                safetyScore -= 15;
+            }
+        });
+        // 3. Evaluate Overdose Upper Limits (UL)
         Object.keys(cumulative).forEach((key) => {
             const rule = UPPER_LIMIT_RULES[key];
             if (rule && cumulative[key].total_volume > rule.max_daily_ul) {
@@ -70,7 +98,7 @@ class StackSafetyMCP {
                 safetyScore -= 15;
             }
         });
-        // 3. Evaluate Interactions (Conflicts & Synergies)
+        // 4. Evaluate Interactions (Conflicts & Synergies)
         const presentKeys = new Set(Object.keys(cumulative));
         const conflicts = [];
         const synergies = [];
@@ -87,13 +115,38 @@ class StackSafetyMCP {
                 }
             }
         }
+        // 5. Generate Consumption Schedule (รายละเอียดการทาน)
+        const morning_before_meal = [];
+        const morning_after_meal = [];
+        const bedtime = [];
+        products.forEach((prod) => {
+            // Logic based on common ingredients in the product
+            const igdIds = (prod.ingredient_list || []).map(i => i.igd_id);
+            // Sleep & Relaxation (Magnesium, Theanine) -> Bedtime
+            if (igdIds.includes('igd_magnesium') || igdIds.includes('igd_theanine')) {
+                bedtime.push(prod.name);
+            }
+            // Fat-soluble vitamins & Minerals needing acid -> Morning After Meal
+            else if (igdIds.includes('igd_vit_d3') || igdIds.includes('igd_vit_k2') || igdIds.includes('igd_calcium') || igdIds.includes('igd_fish_oil')) {
+                morning_after_meal.push(prod.name);
+            }
+            // Water-soluble vitamins, collagen, empty stomach optimal -> Morning Before Meal
+            else {
+                morning_before_meal.push(prod.name);
+            }
+        });
         return {
             total_products: products.length,
             cumulative_ingredients: cumulative,
             warnings,
             conflicts,
             synergies,
-            safety_score: Math.max(0, Math.min(100, safetyScore))
+            safety_score: Math.max(0, Math.min(100, safetyScore)),
+            consumption_schedule: {
+                morning_before_meal,
+                morning_after_meal,
+                bedtime
+            }
         };
     }
 }

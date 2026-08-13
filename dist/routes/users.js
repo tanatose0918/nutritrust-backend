@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = userRoutes;
 const User_1 = require("../models/User");
 async function userRoutes(fastify) {
-    // POST /api/users - Create or update user profile & survey answers
-    fastify.post('/api/users', async (request, reply) => {
+    // POST / - Create or update user profile & survey answers
+    fastify.post('/', async (request, reply) => {
         try {
             const { username, email, role, subject_type, intake_routine, health_goals, health_issues, current_supplements, ratings, feedback, is_newsletter_subscriber } = request.body || {};
             if (!email || !email.trim()) {
@@ -54,8 +54,8 @@ async function userRoutes(fastify) {
             });
         }
     });
-    // GET /api/users - List users
-    fastify.get('/api/users', async (request, reply) => {
+    // GET / - List users
+    fastify.get('/', async (request, reply) => {
         try {
             const users = await User_1.UserModel.find().sort({ createdAt: -1 }).limit(100).lean();
             return reply.code(200).send({
@@ -72,8 +72,8 @@ async function userRoutes(fastify) {
             });
         }
     });
-    // GET /api/users/id/:id - Fetch user profile by MongoDB _id
-    fastify.get('/api/users/id/:id', async (request, reply) => {
+    // GET /id/:id - Fetch user profile by MongoDB _id
+    fastify.get('/id/:id', async (request, reply) => {
         try {
             const { id } = request.params;
             const user = await User_1.UserModel.findById(id).lean();
@@ -96,8 +96,8 @@ async function userRoutes(fastify) {
             });
         }
     });
-    // PUT /api/users/id/:id - Update user profile by MongoDB _id
-    fastify.put('/api/users/id/:id', async (request, reply) => {
+    // PUT /id/:id - Update user profile by MongoDB _id
+    fastify.put('/id/:id', async (request, reply) => {
         try {
             const { id } = request.params;
             const updatePayload = request.body || {};
@@ -122,8 +122,8 @@ async function userRoutes(fastify) {
             });
         }
     });
-    // GET /api/users/:email - Get single user profile by email
-    fastify.get('/api/users/:email', async (request, reply) => {
+    // GET /:email - Get single user profile by email
+    fastify.get('/:email', async (request, reply) => {
         try {
             const { email } = request.params;
             const cleanEmail = email.trim().toLowerCase();
