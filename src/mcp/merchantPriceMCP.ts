@@ -45,6 +45,14 @@ export class MerchantPriceMCP {
         package_price_thb: product.min_price + 20,
         price_per_serving_thb: Number(((product.min_price + 20) / 60).toFixed(2)),
         in_stock: true
+      },
+      {
+        merchant_name: `${brand?.name || 'Brand'} Official`,
+        store_type: 'Verified Partner',
+        platform: 'Official Website',
+        package_price_thb: product.min_price - 10,
+        price_per_serving_thb: Number(((product.min_price - 10) / 60).toFixed(2)),
+        in_stock: true
       }
     ];
 
