@@ -17,6 +17,8 @@ import tokenizerRoutes from './routes/tokenizer';
 import aiAdviceRoutes from './routes/aiAdvice';
 import mcpRoutes from './routes/mcpRoutes';
 import authRoutes from './routes/auth';
+import { analyticsBuffer } from './services/analyticsBuffer';
+import { weeklyAggregator } from './services/weeklyAggregator';
 
 dotenv.config();
 
@@ -35,6 +37,10 @@ const startServer = async () => {
 
     // Register MongoDB Database Plugin
     await fastify.register(dbPlugin);
+
+    // Initialize Analytics Services (AFTER DB is connected)
+    analyticsBuffer.init();
+    weeklyAggregator.init();
 
     // Health check endpoint
     fastify.get('/health', async () => {

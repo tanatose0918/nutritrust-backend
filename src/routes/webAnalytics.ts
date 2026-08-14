@@ -1,9 +1,6 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
-import { WebAnalyticsModel } from '../models/WebAnalytics';
-import { UserModel } from '../models/User';
-import { WaitlistModel } from '../models/Waitlist';
-import { SurveyModel } from '../models/Survey';
-import { analyticsBuffer } from '../services/analyticsBuffer';
+import { analyticsBuffer } from '../services/analyticsBuffer.js';
+import { weeklyAggregator } from '../services/weeklyAggregator.js';
 
 export default async function webAnalyticsRoutes(fastify: FastifyInstance) {
 
@@ -20,46 +17,58 @@ export default async function webAnalyticsRoutes(fastify: FastifyInstance) {
         return reply.status(202).send({ success: true, buffered: true });
     });
 
-    // GET / - สำหรับ <VisitorStats /> ดึงข้อมูลแสดงผลสดๆ
+    // GET / - สำหรับ <VisitorStats /> ดึงข้อมูลจาก Cache (ไม่ query DB per request)
+    // Backend query MongoDB เพียงครั้งเดียวตอนเที่ยงคืน แล้ว Cache ไว้
+    // Frontend poll ทุก 5 นาที — ถ้า Cache ยังไม่พร้อมจะได้ loading: true
     fastify.get('/', async (req, reply) => {
         try {
-            const [aggregateResult, usersCount, waitlistsCount, surveysCount, latestDoc] = await Promise.all([
-                WebAnalyticsModel.aggregate([
-                    {
-                        $group: {
-                            _id: null,
-                            totalVisitors: { $sum: '$unique_visitors_count' },
-                            totalSearches: { $sum: '$total_product_searches' }
-                        }
+            const snapshot = analyticsBuffer.getCachedSnapshot();
+
+            if (!snapshot) {
+                // Cache ยังไม่พร้อม (server เพิ่ง start / DB ยังไม่ connect)
+                return {
+                    success: true,
+                    loading: true,
+                    data: {
+                        early_adopters: 0,
+                        unique_visitors: 0,
+                        product_searches: 0,
+                        last_updated: new Date()
                     }
-                ]),
-                UserModel.countDocuments(),
-                WaitlistModel.countDocuments(),
-                SurveyModel.countDocuments(),
-                WebAnalyticsModel.findOne().sort({ snapshot_date: -1 })
-            ]);
-
-            const historicalVisitors = aggregateResult[0]?.totalVisitors || 0;
-            const historicalSearches = aggregateResult[0]?.totalSearches || 0;
-
-            const totalEarlyAdopters = usersCount + waitlistsCount + surveysCount;
-
-            // รวมยอดสะสมทั้งหมดใน DB + ยอดสดที่เพิ่งยิงมาพักใน Buffer
-            const realTimeVisitors = historicalVisitors + analyticsBuffer.getPendingSessionCount();
-            const realTimeSearches = historicalSearches + analyticsBuffer.getPendingSearchCount();
+                };
+            }
 
             return {
                 success: true,
-                data: {
-                    early_adopters: totalEarlyAdopters || 0,
-                    unique_visitors: realTimeVisitors,
-                    product_searches: realTimeSearches,
-                    last_updated: latestDoc?.last_updated || new Date()
-                }
+                loading: false,
+                data: snapshot
             };
         } catch (err) {
             fastify.log.error(err);
             return reply.status(500).send({ success: false, message: 'Server error' });
+        }
+    });
+
+    // POST /flush - Dev/Debug: manual flush buffer to DB
+    fastify.post('/flush', async (req, reply) => {
+        try {
+            await analyticsBuffer.manualFlush();
+            await analyticsBuffer.manualRefreshSnapshot();
+            return { success: true, message: 'Flushed & snapshot refreshed' };
+        } catch (err) {
+            fastify.log.error(err);
+            return reply.status(500).send({ success: false, message: 'Flush failed' });
+        }
+    });
+
+    // POST /aggregate-weekly - Dev/Debug: manual trigger weekly aggregation
+    fastify.post('/aggregate-weekly', async (req, reply) => {
+        try {
+            await weeklyAggregator.manualAggregate();
+            return { success: true, message: 'Weekly aggregation completed' };
+        } catch (err) {
+            fastify.log.error(err);
+            return reply.status(500).send({ success: false, message: 'Weekly aggregation failed' });
         }
     });
 }
