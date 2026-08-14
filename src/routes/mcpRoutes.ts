@@ -1,9 +1,10 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
-import { privacyTokenizerMCP } from '../mcp/privacyTokenizerMCP';
-import { stackSafetyMCP } from '../mcp/stackSafetyMCP';
-import { dynamicPersonaMCP } from '../mcp/dynamicPersonaMCP';
-import { evidenceKBMCP } from '../mcp/evidenceKBMCP';
-import { merchantPriceMCP } from '../mcp/merchantPriceMCP';
+import { privacyTokenizerMCP } from '../mcp/privacyTokenizerMCP.js';
+import { stackSafetyMCP } from '../mcp/stackSafetyMCP.js';
+import { dynamicPersonaMCP } from '../mcp/dynamicPersonaMCP.js';
+import { evidenceKBMCP } from '../mcp/evidenceKBMCP.js';
+import { merchantPriceMCP } from '../mcp/merchantPriceMCP.js';
+import { geminiService } from '../services/geminiService.js';
 
 export default async function mcpRoutes(fastify: FastifyInstance) {
 
@@ -51,12 +52,55 @@ export default async function mcpRoutes(fastify: FastifyInstance) {
     }
   });
 
-  // MCP 4: Merchant Official Store Price Indexer
+  // MCP 4: Merchant Official Store Price Indexer (Single)
   fastify.get('/merchant-price', async (req: FastifyRequest<{ Querystring: { product_id: string } }>, reply: FastifyReply) => {
     try {
       const { product_id } = req.query || {};
       const result = await merchantPriceMCP.getOfficialStorePrices(product_id);
       return reply.send({ success: true, mcp_service: 'MCP 4: Merchant Price Indexer', data: result });
+    } catch (err: any) {
+      return reply.code(500).send({ success: false, message: err.message });
+    }
+  });
+
+  // MCP 4: Merchant Official Store Price Indexer (Batch / Multiple)
+  fastify.post('/merchant-prices', async (req: FastifyRequest<{ Body: { product_ids: string[] } }>, reply: FastifyReply) => {
+    try {
+      const { product_ids } = req.body || {};
+      const firstId = (product_ids && product_ids.length > 0) ? product_ids[0] : 'p_001';
+      const result = await merchantPriceMCP.getOfficialStorePrices(firstId);
+      return reply.send({ success: true, mcp_service: 'MCP 4: Merchant Price Indexer', data: result });
+    } catch (err: any) {
+      return reply.code(500).send({ success: false, message: err.message });
+    }
+  });
+
+  // MCP 6: AI Pharmacist Clinical Summary (Google AI Studio Gemini API)
+  fastify.post('/ai-summary', async (req: FastifyRequest<{
+    Body: {
+      email?: string;
+      product_names?: string[];
+      conflicts?: any[];
+      synergies?: any[];
+      warnings?: any[];
+      health_issues?: string[];
+      health_goals?: string[];
+      safety_score?: number;
+    }
+  }>, reply: FastifyReply) => {
+    try {
+      const body = req.body || {};
+      const result = await geminiService.generateStackPharmacistSummary({
+        email: body.email,
+        product_names: body.product_names || [],
+        conflicts: body.conflicts || [],
+        synergies: body.synergies || [],
+        warnings: body.warnings || [],
+        health_issues: body.health_issues || [],
+        health_goals: body.health_goals || [],
+        safety_score: body.safety_score
+      });
+      return reply.send({ success: true, mcp_service: 'MCP 6: AI Pharmacist Synthesis (Gemini)', data: result });
     } catch (err: any) {
       return reply.code(500).send({ success: false, message: err.message });
     }

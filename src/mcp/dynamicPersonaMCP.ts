@@ -90,6 +90,8 @@ export class DynamicPersonaMCP {
       skin_vitality: Math.min(100, skinScore)
     };
 
+    const cautionTitles = safety.warnings.map((w) => w.title_th);
+
     const personasList: IPersonaMatchScore[] = [
       {
         persona_id: 'senior_grandparent',
@@ -97,7 +99,7 @@ export class DynamicPersonaMCP {
         avatar_emoji: '👵',
         match_percentage: Math.round((baseDimensions.joint_bone * 0.7 + baseDimensions.immunity_defense * 0.3)),
         strength_points: ['สนับสนุนความยืดหยุ่นของข้อต่อ', 'ลดการเสื่อมของกระดูกอ่อน'],
-        caution_points: safety.warnings,
+        caution_points: cautionTitles,
         dimensions: baseDimensions
       },
       {
@@ -106,7 +108,7 @@ export class DynamicPersonaMCP {
         avatar_emoji: '🏃',
         match_percentage: Math.round((baseDimensions.active_recovery * 0.6 + baseDimensions.cardio_metabolic * 0.4)),
         strength_points: ['ช่วยฟื้นฟูกล้ามเนื้อหลังออกกำลังกาย', 'ลดการเกิดตะคริว'],
-        caution_points: safety.warnings,
+        caution_points: cautionTitles,
         dimensions: baseDimensions
       },
       {
@@ -115,7 +117,7 @@ export class DynamicPersonaMCP {
         avatar_emoji: '💻',
         match_percentage: Math.round((baseDimensions.sleep_stress * 0.7 + baseDimensions.immunity_defense * 0.3)),
         strength_points: ['ผ่อนคลายระบบประสาท', 'ช่วยให้หลับลึกและตื่นมาสดชื่น'],
-        caution_points: safety.warnings,
+        caution_points: cautionTitles,
         dimensions: baseDimensions
       }
     ];

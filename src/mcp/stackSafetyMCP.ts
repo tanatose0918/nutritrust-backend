@@ -1,5 +1,5 @@
-import { ProductModel } from '../models/Product';
-import { IngredientModel } from '../models/Ingredient';
+import { ProductModel } from '../models/Product.js';
+import { IngredientModel } from '../models/Ingredient.js';
 
 // ---------------------------------------------------------------------------
 // Ingredient Alias Mapping: map seed IDs (igd_001, igd_002, ...) to engine IDs
@@ -17,7 +17,15 @@ const INGREDIENT_ALIAS: Record<string, string> = {
   igd_009: 'igd_astaxanthin',
   igd_010: 'igd_collagen',
   igd_011: 'igd_glucosamine',
-  igd_012: 'igd_egcg'
+  igd_012: 'igd_egcg',
+  igd_013: 'igd_vit_k2',
+  igd_014: 'igd_vit_d3',
+  igd_015: 'igd_zinc',
+  igd_016: 'igd_calcium',
+  igd_017: 'igd_iron',
+  igd_018: 'igd_theanine',
+  igd_019: 'igd_ginseng',
+  igd_020: 'igd_curcumin'
 };
 
 export interface IUpperLimitRule {
@@ -31,6 +39,14 @@ export interface IUpperLimitRule {
 export interface IInteractionRule {
   pair: [string, string];
   type: 'conflict' | 'synergy';
+  title_th: string;
+  description_th: string;
+}
+
+export interface IHealthCautionWarning {
+  condition: string;
+  ingredient: string;
+  severity: 'high' | 'medium';
   title_th: string;
   description_th: string;
 }
@@ -65,7 +81,7 @@ const INTERACTION_RULES: IInteractionRule[] = [
     title_th: 'Vitamin C ช่วยกระตุ้นการสร้าง Collagen',
     description_th: 'Vitamin C เป็น Co-factor สำคัญในการสังเคราะห์เส้นใยคอลลาเจนในชั้นผิวและข้อต่อ'
   },
-  // New Rules — Feature 1
+  // Feature 1
   {
     pair: ['igd_fish_oil', 'igd_lcarnitine'],
     type: 'synergy',
@@ -107,7 +123,7 @@ const INTERACTION_RULES: IInteractionRule[] = [
 export interface IStackSafetyResult {
   total_products: number;
   cumulative_ingredients: Record<string, { name: string; total_volume: number; unit: string }>;
-  warnings: string[];
+  warnings: IHealthCautionWarning[];
   conflicts: IInteractionRule[];
   synergies: IInteractionRule[];
   safety_score: number;
@@ -176,28 +192,131 @@ export class StackSafetyMCP {
       }
     }
 
-    const warnings: string[] = [];
+    const warnings: IHealthCautionWarning[] = [];
     let safetyScore = 100;
     const presentKeys = new Set(Object.keys(cumulative));
 
-    // ── 2. Personal Health Issue Warnings ─────────────────────────────────────
+    // ── 2. Personal Health Issue Cautions (Expanded & Structured) ────────────
     const issuesText = healthIssues.join(' ').toLowerCase();
-    const hasKidney   = issuesText.includes('โรคไต')   || issuesText.includes('kidney')      || issuesText.includes('ไต');
-    const hasLiver    = issuesText.includes('โรคตับ')  || issuesText.includes('liver')        || issuesText.includes('ตับ');
-    const hasHBP      = issuesText.includes('ความดัน') || issuesText.includes('blood pressure')|| issuesText.includes('hypertension');
-    const hasDiabetes = issuesText.includes('เบาหวาน') || issuesText.includes('diabetes')     || issuesText.includes('น้ำตาล');
-    const hasHeart    = issuesText.includes('โรคหัวใจ')|| issuesText.includes('heart disease') || issuesText.includes('หัวใจ');
 
-    if (hasKidney   && (presentKeys.has('igd_calcium') || presentKeys.has('igd_electrolytes')))
-      { warnings.push('[Personal Health Warning]: ท่านมีภาวะโรคไต ควรระวัง Calcium / Electrolytes ปริมาณสูง แนะนำปรึกษาแพทย์ก่อนทาน'); safetyScore -= 20; }
-    if (hasLiver    && (presentKeys.has('igd_vit_a') || presentKeys.has('igd_iron')))
-      { warnings.push('[Personal Health Warning]: ท่านมีภาวะโรคตับ ควรระวัง Vitamin A / Iron ที่อาจเพิ่มภาระตับ'); safetyScore -= 15; }
-    if (hasHBP      && (presentKeys.has('igd_electrolytes') || presentKeys.has('igd_ginseng')))
-      { warnings.push('[Personal Health Warning]: ท่านมีภาวะความดันโลหิต ควรเลือก Electrolytes สูตร Low-Sodium'); safetyScore -= 15; }
-    if (hasDiabetes && presentKeys.has('igd_coq10'))
-      { warnings.push('[Personal Health Warning]: ผู้ป่วยเบาหวานที่ทาน CoQ10 ควรติดตามระดับน้ำตาลในเลือดอย่างใกล้ชิด'); safetyScore -= 10; }
-    if (hasHeart    && presentKeys.has('igd_lcarnitine'))
-      { warnings.push('[Personal Health Warning]: ผู้ป่วยโรคหัวใจควรปรึกษาแพทย์ก่อนทาน L-Carnitine ในปริมาณสูง'); safetyScore -= 10; }
+    const hasKidney    = issuesText.includes('โรคไต') || issuesText.includes('kidney') || issuesText.includes('ไต') || issuesText.includes('renal');
+    const hasLiver     = issuesText.includes('โรคตับ') || issuesText.includes('liver') || issuesText.includes('ตับ') || issuesText.includes('hepatic');
+    const hasHBP       = issuesText.includes('ความดัน') || issuesText.includes('blood pressure') || issuesText.includes('hypertension');
+    const hasDiabetes  = issuesText.includes('เบาหวาน') || issuesText.includes('diabetes') || issuesText.includes('น้ำตาล');
+    const hasHeart     = issuesText.includes('โรคหัวใจ') || issuesText.includes('heart') || issuesText.includes('หัวใจ') || issuesText.includes('cardio');
+    const hasGERD      = issuesText.includes('กรดไหลย้อน') || issuesText.includes('gerd') || issuesText.includes('กระเพาะ') || issuesText.includes('gastritis') || issuesText.includes('reflux');
+    const hasBloodThin = issuesText.includes('ยาต้านการแข็งตัว') || issuesText.includes('warfarin') || issuesText.includes('aspirin') || issuesText.includes('ละลายลิ่มเลือด') || issuesText.includes('blood thinner');
+    const hasGout      = issuesText.includes('เกาต์') || issuesText.includes('gout') || issuesText.includes('ยูริก') || issuesText.includes('uric');
+    const hasThyroid   = issuesText.includes('ไทรอยด์') || issuesText.includes('thyroid') || issuesText.includes('คอพอก');
+    const hasGallstone = issuesText.includes('นิ่วในถุงน้ำดี') || issuesText.includes('gallstone') || issuesText.includes('ถุงน้ำดี');
+
+    // Rule: Kidney disease
+    if (hasKidney && (presentKeys.has('igd_calcium') || presentKeys.has('igd_electrolytes'))) {
+      warnings.push({
+        condition: 'โรคไต (Kidney Disease)',
+        ingredient: 'Calcium / Electrolytes',
+        severity: 'high',
+        title_th: 'ระวังปริมาณ Calcium และ Electrolytes ในผู้มีภาวะโรคไต',
+        description_th: 'การทำงานของไตที่ลดลงอาจขับเกลือแร่และแคลเซียมส่วนเกินได้น้อย เสี่ยงต่อภาวะแคลเซียมในเลือดสูงหรือความไม่สมดุลของเกลือแร่ แนะนำปรึกษาแพทย์เฉพาะทางก่อนทาน'
+      });
+      safetyScore -= 20;
+    }
+
+    // Rule: Liver disease
+    if (hasLiver && (presentKeys.has('igd_vit_a') || presentKeys.has('igd_iron') || presentKeys.has('igd_egcg'))) {
+      warnings.push({
+        condition: 'โรคตับ (Liver Condition)',
+        ingredient: 'Vitamin A / Iron / EGCG',
+        severity: 'high',
+        title_th: 'หลีกเลี่ยง Vitamin A, Iron หรือ EGCG ปริมาณสูงที่อาจเพิ่มภาระตับ',
+        description_th: 'ตับมีหน้าที่สะสมและเผาผลาญสารกลุ่มนี้ การได้รับในปริมาณสูงอาจสะสมและเพิ่มความเครียดต่อเซลล์ตับได้'
+      });
+      safetyScore -= 15;
+    }
+
+    // Rule: Hypertension / HBP
+    if (hasHBP && (presentKeys.has('igd_electrolytes') || presentKeys.has('igd_ginseng'))) {
+      warnings.push({
+        condition: 'ความดันโลหิตสูง (Hypertension)',
+        ingredient: 'High-Sodium Electrolytes / Ginseng',
+        severity: 'medium',
+        title_th: 'ควรเลือก Electrolytes สูตร Low-Sodium และระวังโสม',
+        description_th: 'โซเดียมสูงในเกลือแร่บางชนิดอาจส่งผลต่อความดันโลหิต และโสมอาจมีผลกระตุ้นระบบไหลเวียนเลือด ควรตรวจวัดความดันสม่ำเสมอ'
+      });
+      safetyScore -= 15;
+    }
+
+    // Rule: Diabetes
+    if (hasDiabetes && presentKeys.has('igd_coq10')) {
+      warnings.push({
+        condition: 'โรคเบาหวาน (Diabetes)',
+        ingredient: 'CoQ10',
+        severity: 'medium',
+        title_th: 'ผู้ป่วยเบาหวานที่ทาน CoQ10 ควรติดตามระดับน้ำตาลในเลือด',
+        description_th: 'CoQ10 มีส่วนช่วยในการทำงานของไมโทคอนเดรียและอาจส่งเสริมการตอบสนองต่ออินซูลิน ควรตรวจวัดระดับน้ำตาลในเลือดเพื่อปรับยาตามความเหมาะสม'
+      });
+      safetyScore -= 10;
+    }
+
+    // Rule: Heart Disease
+    if (hasHeart && presentKeys.has('igd_lcarnitine')) {
+      warnings.push({
+        condition: 'โรคหัวใจ (Heart Disease)',
+        ingredient: 'L-Carnitine',
+        severity: 'high',
+        title_th: 'ผู้ป่วยโรคหัวใจควรปรึกษาแพทย์ก่อนทาน L-Carnitine ปริมาณสูง',
+        description_th: 'L-Carnitine ในปริมาณสูงต่อเนื่องอาจเปลี่ยนรูปเป็น TMAO ในลำไส้ ซึ่งมีความเชื่อมโยงกับหลอดเลือดหัวใจ ควรรับประทานภายใต้คำแนะนำของแพทย์'
+      });
+      safetyScore -= 15;
+    }
+
+    // Rule: GERD / Gastritis
+    if (hasGERD && (presentKeys.has('igd_vit_c') || presentKeys.has('igd_egcg') || presentKeys.has('igd_zinc'))) {
+      warnings.push({
+        condition: 'กรดไหลย้อน / แผลในกระเพาะ (GERD / Gastritis)',
+        ingredient: 'Vitamin C / EGCG / Zinc',
+        severity: 'medium',
+        title_th: 'ห้ามทาน Vitamin C หรือ สารสกัดชาเขียว (EGCG) ตอนท้องว่าง',
+        description_th: 'Vitamin C (Ascorbic Acid) และ EGCG มีความเป็นกรดและสารฝาดที่อาจระคายเคืองเยื่อบุกระเพาะอาหาร แนะนำทานพร้อมหรือหลังอาหารมื้อหนักทันที'
+      });
+      safetyScore -= 10;
+    }
+
+    // Rule: Blood Thinners (Warfarin / Aspirin)
+    if (hasBloodThin && (presentKeys.has('igd_vit_k2') || presentKeys.has('igd_fish_oil') || presentKeys.has('igd_astaxanthin'))) {
+      warnings.push({
+        condition: 'ผู้ใช้ยาต้านการแข็งตัวของเลือด (Blood Thinners)',
+        ingredient: 'Vitamin K2 / Fish Oil / Astaxanthin',
+        severity: 'high',
+        title_th: 'ระวังปฏิกิริยากับยาต้านการแข็งตัวของเลือด (Warfarin/Aspirin)',
+        description_th: 'Vitamin K2 มีผลต่อกระบวนการแข็งตัวของเลือด ส่วน Fish Oil ขนาดสูง (>2,000mg) มีฤทธิ์ต้านการเกาะกลุ่มของเกล็ดเลือด อาจส่งผลต่อค่า INR ต้องปรึกษาแพทย์ก่อนทาน'
+      });
+      safetyScore -= 20;
+    }
+
+    // Rule: Gout / High Uric Acid
+    if (hasGout && (presentKeys.has('igd_collagen') || presentKeys.has('igd_lcarnitine'))) {
+      warnings.push({
+        condition: 'โรคเกาต์ / กรดยูริกสูง (Gout)',
+        ingredient: 'High Protein / Collagen',
+        severity: 'medium',
+        title_th: 'ควรดื่มน้ำมากๆ เมื่อทาน Collagen ในผู้ป่วยโรคเกาต์',
+        description_th: 'การทานโปรตีนเข้มข้นควรดื่มน้ำสะอาดวันละ 2.5-3 ลิตร เพื่อช่วยไตในการขับของเสียและควบคุมสมดุลกรดยูริก'
+      });
+      safetyScore -= 10;
+    }
+
+    // Rule: Gallstones
+    if (hasGallstone && presentKeys.has('igd_curcumin')) {
+      warnings.push({
+        condition: 'นิ่วในถุงน้ำดี (Gallstones)',
+        ingredient: 'Curcumin / Turmeric',
+        severity: 'high',
+        title_th: 'ผู้มีนิ่วในถุงน้ำดีควรหลีกเลี่ยงขมิ้นชันสกัดเข้มข้น',
+        description_th: 'สารสกัด Curcumin กระตุ้นการบีบตัวของถุงน้ำดี อาจทำให้เกิดอาการปวดเกร็งรุนแรงในผู้ที่มีนิ่วในถุงน้ำดีอุดกั้น'
+      });
+      safetyScore -= 15;
+    }
 
     // ── 3. Interaction Rules ──────────────────────────────────────────────────
     const conflicts: IInteractionRule[] = [];
@@ -220,7 +339,7 @@ export class StackSafetyMCP {
       const ids = prod.engine_ids;
       if (ids.includes('igd_magnesium') || ids.includes('igd_theanine')) {
         bedtime.push(prod.name);
-      } else if (ids.includes('igd_fish_oil') || ids.includes('igd_vit_d3') || ids.includes('igd_vit_k2') || ids.includes('igd_coq10') || ids.includes('igd_uc2')) {
+      } else if (ids.includes('igd_fish_oil') || ids.includes('igd_vit_d3') || ids.includes('igd_vit_k2') || ids.includes('igd_coq10') || ids.includes('igd_uc2') || ids.includes('igd_astaxanthin') || ids.includes('igd_curcumin')) {
         morning_after_meal.push(prod.name);
       } else {
         morning_before_meal.push(prod.name);
@@ -240,7 +359,6 @@ export class StackSafetyMCP {
         bedtime
       }
     };
-
   }
 }
 
